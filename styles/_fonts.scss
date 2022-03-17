@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rasa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rasa&display=swap');
+
+$Rasa: 'Rasa';
+$OpenSans: 'Open Sans';
+
+//------------------------------------------------- For Desktop ----------------------------------------------------------------->
+@mixin desktop-heading-1 {
+    font-family: $Rasa;
+    font-size: 64px;
+    line-height: 84px;
+}
+@mixin desktop-heading-2 {
+    font-family: $Rasa;
+    font-size: 48px;
+    line-height: 64px;
+}
+@mixin desktop-heading-3 {
+    font-family: $Rasa;
+    font-size: 32px;
+    line-height: 40px;
+}
+@mixin desktop-heading-4 {
+    font-family: $Rasa;
+    font-weight: medium;
+    font-size: 23px;
+    line-height: 32px;
+}
+@mixin desktop-subheading-1 {
+    font-family: $Rasa;
+    font-size: 18px;
+    line-height: 24px;
+}
+@mixin desktop-label-1 {
+    font-family: $Rasa;
+    font-size: 42px;
+    line-height: 48px;
+}
+@mixin desktop-label-2 {
+    font-family: $Rasa;
+    font-size: 40px;
+    line-height: 48px;
+}
+@mixin desktop-helper {
+    font-family: $OpenSans;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin desktop-overline {
+    font-family: $OpenSans;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+@mixin desktop-button-large {
+    font-family: $Rasa;
+    font-size: 24px;
+    line-height: 36px;
+}
+@mixin desktop-body-1 {
+    font-family: $OpenSans;
+    font-size: 20px;
+    line-height: 32px;
+}
+@mixin desktop-body-2 {
+    font-family: $OpenSans;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+// ------------------------------------------------------------ For Mobile --------------------------------------------------
+
+@mixin mobile-heading-1 {
+    font-family: $Rasa;
+    font-size: 32px;
+    line-height: 40px;
+}
+@mixin mobile-heading-2 {
+    font-family: $Rasa;
+    font-size: 29px;
+    line-height: 36px;
+}
+@mixin mobile-heading-3 {
+    font-family: $Rasa;
+    font-weight: medium;
+    font-size: 23px;
+    line-height: 32px;
+}
+@mixin mobile-heading-4 {
+    font-family: $Rasa;
+    font-size: 20px;
+    line-height: 28px;
+}
+@mixin mobile-subheading-1 {
+    font-family: $Rasa;
+    font-size: 18px;
+    line-height: 24px;
+}
+@mixin mobile-subheading-2 {
+    font-family: $Rasa;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+@mixin mobile-subheading-2-light {
+    font-family: $Rasa;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.1599px;
+}
+@mixin mobile-body-1 {
+    font-family: $OpenSans;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin mobile-body-2 {
+    font-family: $OpenSans;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin mobile-body-3 {
+    font-family: $OpenSans;
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 16px;
+}
+@mixin mobile-link {
+    font-family: $OpenSans;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    text-decoration: underline;
+}
+@mixin mobile-overline {
+    font-family: $OpenSans;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+@mixin mobile-helper {
+    font-family: $OpenSans;
+    font-size: 12px;
+    line-height: 16px;
+}
+@mixin mobile-button-small {
+    font-family: $Rasa;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin mobile-button-large {
+    font-family: $Rasa;
+    font-size: 20px;
+    line-height: 32px;
+}
+@mixin mobile-label-1 {
+    font-family: $Rasa;
+    font-size: 42px;
+    line-height: 48px;
+}
+@mixin mobile-label-2 {
+    font-family: $Rasa;
+    font-size: 23px;
+    line-height: 32px;
+}
