@@ -1,0 +1,94 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  .wrapper {
+    @include center();
+    width: 100%;
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: 'title'
+                         'image'
+                         'para'
+                         'button';
+    // .content {
+      .heading {
+        grid-area: title;
+        padding: 10% 0;
+        @include mobile-heading-2();
+        color: $Black;
+        text-align: center;
+      }
+      .paragraph {
+        grid-area: para;
+        padding: 10% 0;
+        @include mobile-body-1();
+        color: $NeutralGrey_100;
+        text-align: center;
+      }
+      .button {
+        grid-area: button;
+        min-width: 178px;
+        // align-self: center;
+        justify-self: center;
+        // display: flex;
+      }
+    // }
+    }
+    
+      .imageContainer {
+        grid-area: image;
+        display: block;
+        width: 100%;
+      }
+    
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    .wrapper {
+      display: grid;
+      grid-template-areas: 'heading image image'
+                           'para image image '
+                           'button image image';
+      .heading {
+        @include desktop-heading-2();
+        grid-area: heading;
+        justify-self: start;
+        align-self: end;
+        padding: 0 10%;
+        text-align: left;
+      }
+      .imageContainer {
+        grid-area: image;
+        // justify-self: center;
+        // align-self: center;
+        display: block;
+        width: 767px;
+        height: 400px;
+      }
+      .paragraph {
+        padding: 0 10%; 
+        @include desktop-body-1();
+        color: $NeutralGrey_100;
+        grid-area: para;
+        justify-self: start;
+        align-self: start;
+        text-align: left;
+      }
+      .button {
+        grid-area: button;
+        max-width: 200px;
+        align-self: start;
+        justify-self: start;
+        padding: 5% 10%;
+      }
+    }
+  }
+}

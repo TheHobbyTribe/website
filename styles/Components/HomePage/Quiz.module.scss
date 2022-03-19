@@ -1,0 +1,90 @@
+@import '../../fonts';
+@import '../../helper';
+@import '../../colors';
+
+.container {
+    background-color: $Purple_100;
+    margin: 100px 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        // align-items: center;
+        .header{
+            @include center();
+            @include mobile-heading-2();
+            color: $White;
+            // padding: 5% 30%;
+            padding: 1% 5%;
+            // border: 1px solid black;
+        }
+        .paragraph {
+            text-align: center;
+            @include mobile-body-1();
+            color: $White;
+            padding: 0 10%;
+        }
+        .button {
+            @include center();
+            padding: 5% 0;
+        }
+        .imageContainer {
+            display: block;
+            position: relative;
+            // width: 100vw;
+            height: 405px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        height: 100%;
+        // max-height: 200px;
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                // padding: 5% 0;
+                // border: 1px solid blanchedalmond;
+                height: 100%;
+                .header{
+                    @include desktop-heading-2();
+                    color: $White;
+                    padding: 5% 0 0 10%;
+                    // border: 1px solid black;
+                    height: 120px;
+                }
+                .paragraph {
+                    text-align: left;
+                    @include desktop-body-1();
+                    color: $White;
+                    // padding: 2% 0;
+                    padding: 0 0 0 10%;
+                    // border: 1px solid white;
+                }
+            }
+            .button {
+                justify-self: end;
+                align-self: start;
+                padding: 1% 0 0 10%;
+                margin-bottom: 30px
+            }
+            .imageContainer {
+                display: block;
+                grid-column: 2/3;
+                height: 100%;
+                width: 100%;
+            }
+            
+        }
+    }
+}
