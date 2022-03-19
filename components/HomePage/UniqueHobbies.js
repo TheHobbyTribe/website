@@ -8,6 +8,7 @@ import photoshop from '../../public/images/hobbies/photoshop.png'
 import CalendarIcon from '../../public/images/Icons/calendar.svg'
 import UserIcon from '../../public/images/Icons/user.svg'
 import SolidButton from '../Common/Buttons/SolidButton'
+import OutlinedButton from '../Common/Buttons/OutlinedButton'
 
 
 const hobbyArray = [
@@ -41,15 +42,15 @@ const UniqueHobbies = () => {
 
 
   return (
-    <div>
-        <div className={styles.container}>
+    <div className={styles.container}>
+        <div className={styles.wrapper}>
             <p className={styles.header}>
                 An Array of unique Hobbies
             </p>
             <p className={styles.paragraph}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusantium nesciunt illum reiciendis reprehenderit doloremque repellat minus deserunt porro sint explicabo numquam repellendus dolorem consequatur, ea sit deleniti ratione maiores!
             </p>
-            <div className={styles.uniqueHobbies}>
+            <div className={styles.gridContainer}>
                 {hobbyArray.map(hobby => {
                     return (
                         <div className={styles.card} key={hobby.hobby}>
@@ -62,19 +63,18 @@ const UniqueHobbies = () => {
                                 height={hobby.image.height} 
                                 />
                             </div>
-                            <h2 className={styles.heading}>{hobby.hobby}</h2>
-                            <div className={styles.hobbyDetails}>
+                            <div className={styles.details}>
+                                <h2 className={styles.heading}>{hobby.hobby}</h2>
                                 <div className={styles.miniDetails}>
-                                    <CalendarIcon />
-                                </div>
-                                <div className={styles.miniDetails}>
-                                    {hobby.time}
-                                </div>
-                                <div className={styles.miniDetails}>
-                                    <UserIcon/> 
-                                </div>
-                                <div className={styles.miniDetails}>
-                                    {hobby.age}
+                                    <div className={styles.items}>
+                                        <CalendarIcon className={styles.icon}/>
+                                        {hobby.time}
+                                    </div>
+                                    
+                                    <div className={styles.items}>
+                                        <UserIcon className={styles.icon}/>
+                                        {hobby.age}
+                                    </div>
                                 </div>
                             </div>
                         
@@ -87,8 +87,11 @@ const UniqueHobbies = () => {
                     )
                 })}
             </div>
+            <div className={styles.outlinedButton}>
+                <OutlinedButton text="View all Courses" />
+            </div>
         </div>
-    </div>
+    </div> 
   )
 }
 
