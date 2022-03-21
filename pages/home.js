@@ -6,6 +6,7 @@ import WhiteButton from '../components/Common/Buttons/WhiteButton';
 import UniqueHobbies from '../components/HomePage/UniqueHobbies';
 import Quiz from '../components/HomePage/Quiz';
 import GlobalInSpirit from '../components/HomePage/GlobalInSpirit';
+import Tribe from '../components/HomePage/Tribe';
 
 
 const home = () => {
@@ -14,6 +15,7 @@ const home = () => {
       <UniqueHobbies />
       <Quiz />
       <GlobalInSpirit />
+      <Tribe />
     </div>
   )
 }

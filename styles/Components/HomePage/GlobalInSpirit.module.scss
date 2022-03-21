@@ -3,11 +3,12 @@
 @import "../../colors";
 
 .container {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 50px 0;
+  margin: 50px 0px;
+  // border: 1px solid black;
   .wrapper {
     @include center();
     width: 100%;
@@ -46,6 +47,11 @@
         grid-area: image;
         display: block;
         width: 100%;
+        // max-width: 500px;
+        // max-height: 250px;
+        justify-self: center;
+        // @include center();
+        // padding: 0 10%;
       }
     
 }
@@ -54,9 +60,9 @@
   .container {
     .wrapper {
       display: grid;
-      grid-template-areas: 'heading image image'
-                           'para image image '
-                           'button image image';
+      grid-template-areas: 'heading image'
+                           'para image  '
+                           'button image ';
       .heading {
         @include desktop-heading-2();
         grid-area: heading;
@@ -69,9 +75,10 @@
         grid-area: image;
         // justify-self: center;
         // align-self: center;
+        // border: 1px solid black;
         display: block;
         width: 767px;
-        height: 400px;
+        height: 100%;
       }
       .paragraph {
         padding: 0 10%; 
@@ -84,7 +91,7 @@
       }
       .button {
         grid-area: button;
-        max-width: 200px;
+        // max-width: 200px;
         align-self: start;
         justify-self: start;
         padding: 5% 10%;

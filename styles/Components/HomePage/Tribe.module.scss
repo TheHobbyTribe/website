@@ -1,0 +1,165 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+.container {
+    height: 100%;
+    border: 1px solid black;
+    // margin: 10px;
+    .wrapper {
+        display: grid;
+        grid-template-areas: 'image'
+                             'image'
+                             'image'
+                             'heading'
+                             'paragraph'
+                             'section-1'
+                             'section-2'
+                             'button';
+        .imageContainer {
+            border: 1px solid black;
+            grid-area: image;
+            // display: block;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            justify-self: end;
+            // height: 551px;
+            // max-height: 551px;
+        }
+        .heading {
+            grid-area: heading;
+            display: flex;
+            @include mobile-heading-2();
+            @include center();
+            color: $Black;
+            .subheading2 {
+                h3 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+        .paragraph {
+            grid-area: paragraph;
+            @include mobile-body-1();
+            padding: 0 10%;
+            color: $NeutralGrey_100;
+        }
+        .section1 , .section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10%;
+            color: $Black;
+            .items {
+                h5 {
+                    @include mobile-heading-2();
+                    margin: 10px
+                }
+                p {
+                    color: $NeutralGrey_100;
+                    @include mobile-body-2();
+                    margin: 10px;
+                }
+            }
+        }
+        .button {
+            // max-width: 343px;
+            width: 100%;
+            grid-area: button;
+            // align-self: center;
+            justify-self: center;
+            padding: 10%;
+        }
+        
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        height: 100%;
+        border: 1px solid black;
+        // margin: 10px;
+        .wrapper {
+            display: grid;
+            // grid-template-areas: 'image'
+            //                      'image'
+            //                      'image'
+            //                      'heading'
+            //                      'paragraph'
+            //                      'section-1'
+            //                      'section-2'
+            //                      'button';
+            grid-template-areas: 'heading heading image'
+                                 'paragraph paragraph image'
+                                 'section1 section2 image'
+                                 'button . image';
+            .imageContainer {
+                border: 1px solid black;
+                grid-area: image;
+                // display: block;
+                position: relative;
+                width: 100%;
+                min-width: 50vw;
+                // height: 100vh;
+                justify-self: end;
+                // height: 551px;
+                // max-height: 551px;
+            }
+            .heading {
+                grid-area: heading;
+                display: flex;
+                @include mobile-heading-2();
+                @include center();
+                color: $Black;
+                .subheading2 {
+                    h3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+            .paragraph {
+                grid-area: paragraph;
+                @include mobile-body-1();
+                padding: 0 10%;
+                color: $NeutralGrey_100;
+            }
+            .section1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10%;
+                grid-area: section1;
+                color: $Black;
+                .items {
+                    h5 {
+                        @include mobile-heading-2();
+                        margin: 10px
+                    }
+                    p {
+                        color: $NeutralGrey_100;
+                        @include mobile-body-2();
+                        margin: 10px;
+                    }
+                }
+            }
+            .button {
+                // max-width: 343px;
+                width: 100%;
+                grid-area: button;
+                // align-self: center;
+                justify-self: center;
+                padding: 10%;
+            }
+            
+        }
+    
+        
+    }
+}
