@@ -16,7 +16,7 @@ const GlobalInSpirit = () => {
                 </h3>
             </div>
             <div className={styles.paragraph}>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis saepe aliquam iste sint, reiciendis dolores!
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis accusamus praesentium culpa reprehenderit repellat minima!
             </div>
             <div className={styles.button}>
                 <SolidButton text="Join the Tribe &#10142;" className={styles.buttonText} />
