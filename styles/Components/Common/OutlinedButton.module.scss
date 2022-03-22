@@ -1,0 +1,21 @@
+@import '../../colors';
+@import '../../fonts';
+@import '../../helper';
+
+.button {
+    background-color: $White;
+    color: $Orange_80;
+    border: 1px solid $Orange_80;
+    border-radius: 4px;
+    box-sizing: border-box;
+    @media screen and (max-width: 769px) {
+        @include mobile-button-large;
+        width: 342px;
+        height: 48px;
+    }
+    @media screen and (min-width: 769px) {
+        @include desktop-button-large;
+        width: 202px;
+        height: 52px;
+    }
+}
