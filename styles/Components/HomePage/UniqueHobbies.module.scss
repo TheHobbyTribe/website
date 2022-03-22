@@ -6,7 +6,6 @@
     display: flex;
     justify-content: center;
     .wrapper {
-        max-width: 1440px;
         width: 100%;
         height: 100%;
         padding: 0 10%;
@@ -70,7 +69,6 @@
         }
         .outlinedButton {
             @include center();
-            // border: 1px solid black;
             margin: 0;
         }
         

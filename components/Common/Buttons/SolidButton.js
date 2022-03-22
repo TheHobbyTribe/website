@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/Components/Common/SolidButton.module.scss'
+import styles from '../../../styles/components/common/SolidButton.module.scss'
 
 const SolidButton = ({text}) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/Components/Common/WhiteButton.module.scss'
+import styles from '../../../styles/components/common/WhiteButton.module.scss'
 
 const WhiteButton = ({text}) => {
   return (

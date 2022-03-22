@@ -1,26 +1,19 @@
 import React from 'react'
-import styles from '../../styles/Components/HomePage/Tribe.module.scss'
+import styles from '../../styles/components/homepage/Tribe.module.scss'
 import handsImage from '../../public/images/misc/hands.png'
 import Image from 'next/image'
 import PurpleLine from '../../public/images/misc/purpleLine.svg'
-import TwistedLine from '../../public/images/Icons/twistedline.svg'
-import Envelope from '../../public/images/Icons/envelope.svg'
-import SolidButton from '../Common/Buttons/SolidButton'
+import TwistedLine from '../../public/images/icons/twistedline.svg'
+import Envelope from '../../public/images/icons/envelope.svg'
+import { SolidButton } from '../components'
+
 
 const Tribe = () => {
   return (
     <div className={styles.container}>
-        {/* hello this is tribe */}
         <div className={styles.wrapper}>
             <div className={styles.imageContainer}>
-                <Image
-                    src={handsImage.src}
-                    // width={handsImage.width}
-                    // height={handsImage.height}
-                    alt="Hands Image"
-                    layout='fill'
-                    objectFit='contain'
-                />
+                <img className={styles.image} src={handsImage.src} alt="yo" />
             </div>
             <div className={styles.heading}>
                 <div className={styles.subheading1}>

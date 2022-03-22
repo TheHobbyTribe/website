@@ -1,36 +1,40 @@
 import React from 'react'
-import styles from '../../styles/Components/HomePage/UniqueHobbies.module.scss'
+import styles from '../../styles/components/homepage/UniqueHobbies.module.scss'
 import Image from 'next/image'
 import abacus from '../../public/images/hobbies/abacus.png'
 import bookreading from '../../public/images/hobbies/bookreading.png'
 import painting from '../../public/images/hobbies/painting.png'
 import photoshop from '../../public/images/hobbies/photoshop.png'
-import CalendarIcon from '../../public/images/Icons/calendar.svg'
-import UserIcon from '../../public/images/Icons/user.svg'
-import SolidButton from '../Common/Buttons/SolidButton'
-import OutlinedButton from '../Common/Buttons/OutlinedButton'
+import CalendarIcon from '../../public/images/icons/calendar.svg'
+import UserIcon from '../../public/images/icons/user.svg'
+import { SolidButton, OutlinedButton, HobbyCard } from '../components'
+
 
 
 const hobbyArray = [
     {
+        id: 1,
         hobby: 'PhotoShop',
         time: '4 weeks',
         age: '12-100 yrs',
         image: photoshop
     },
     {
+        id: 2,
         hobby: 'Abacus',
         time: '4 weeks',
         age: '12-100 yrs',
         image: abacus
     },
     {
+        id: 3,
         hobby: 'Chess',
         time: '4 weeks',
         age: '12-100 yrs',
         image: painting
     },
     {
+        id: 4,
         hobby: 'Story Telling',
         time: '4 weeks',
         age: '12-100 yrs',
@@ -53,36 +57,8 @@ const UniqueHobbies = () => {
             <div className={styles.gridContainer}>
                 {hobbyArray.map(hobby => {
                     return (
-                        <div className={styles.card} key={hobby.hobby}>
-                            <div className={styles.image}>
-                                <Image 
-                                src={hobby.image.src} 
-                                alt='Hobby' 
-                                layout="responsive"
-                                width={hobby.image.width}
-                                height={hobby.image.height} 
-                                />
-                            </div>
-                            <div className={styles.details}>
-                                <h2 className={styles.heading}>{hobby.hobby}</h2>
-                                <div className={styles.miniDetails}>
-                                    <div className={styles.items}>
-                                        <CalendarIcon className={styles.icon}/>
-                                        {hobby.time}
-                                    </div>
-                                    
-                                    <div className={styles.items}>
-                                        <UserIcon className={styles.icon}/>
-                                        {hobby.age}
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                            <div className={styles.button}>
-                                <SolidButton text="Book for Free" />
-                            </div>
-                            
+                        <div key={hobby.id}>
+                            <HobbyCard hobby={hobby} />
                         </div>
                     )
                 })}

@@ -18,7 +18,6 @@
                          'image'
                          'para'
                          'button';
-    // .content {
       .heading {
         grid-area: title;
         padding: 10% 0;
@@ -40,7 +39,6 @@
         justify-self: center;
         // display: flex;
       }
-    // }
     }
     
       .imageContainer {

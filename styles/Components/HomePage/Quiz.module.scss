@@ -12,8 +12,6 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 1440px;
-        // align-items: center;
         .header{
             @include center();
             @include mobile-heading-2();
@@ -35,8 +33,9 @@
         .imageContainer {
             display: block;
             position: relative;
-            // width: 100vw;
-            height: 405px;
+            width: 100%;
+            height: 100%;
+            
         }
     }
 }
@@ -44,45 +43,54 @@
 @media screen and (min-width: 1024px) {
     .container {
         height: 100%;
-        // max-height: 200px;
         .wrapper {
             display: grid;
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-areas: 'contentText contentText image';
             .text {
+                grid-area: contentText;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
                 align-items: flex-start;
-                // padding: 5% 0;
+                padding: 0;
                 // border: 1px solid blanchedalmond;
+                margin: 0 20px;
                 height: 100%;
                 .header{
                     @include desktop-heading-2();
                     color: $White;
-                    padding: 5% 0 0 10%;
-                    // border: 1px solid black;
-                    height: 120px;
+                    padding: 0;
+                    margin: 2% 10%;
+                    p{
+                        margin: 0;
+                    }
                 }
                 .paragraph {
                     text-align: left;
+                    margin: 2% 10%;
                     @include desktop-body-1();
                     color: $White;
-                    // padding: 2% 0;
-                    padding: 0 0 0 10%;
-                    // border: 1px solid white;
+                    padding: 0;
+                    p{
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                .button {
+                    justify-self: end;
+                    align-self: start;
+                    margin: 2% 10%;
+                    padding: 0;
                 }
             }
-            .button {
-                justify-self: end;
-                align-self: start;
-                padding: 1% 0 0 10%;
-                margin-bottom: 30px
-            }
+            
             .imageContainer {
+                grid-area: image;
                 display: block;
-                grid-column: 2/3;
+                position: relative;
                 height: 100%;
                 width: 100%;
+                width: 300px;
+                min-height: 100%;
             }
             
         }

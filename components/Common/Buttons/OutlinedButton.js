@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/Components/Common/OutlinedButton.module.scss'
+import styles from '../../../styles/components/common/OutlinedButton.module.scss'
 
 const OutlinedButton = ({text}) => {
   return (
