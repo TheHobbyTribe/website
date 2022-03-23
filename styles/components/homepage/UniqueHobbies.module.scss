@@ -1,0 +1,104 @@
+@import '../../fonts';
+@import '../../helper';
+@import '../../colors';
+
+.container {
+    display: flex;
+    justify-content: center;
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 0 10%;
+        .header {
+            @include center();
+            @include mobile-heading-2();
+        }
+        .paragraph {
+            @include center();
+            @include mobile-body-1();
+            padding: 0 10%;
+        }
+        
+        .gridContainer {
+            grid-column: 2/4;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            padding: 3% 5%;
+            .card {
+                display: flex;
+                flex-direction: column;
+                .image {
+                    display: block;
+                    width: 100%;
+                    border-radius: 6px;
+                }
+                
+                .details {
+                    color: $NeutralGrey_100;
+                    display: flex;
+                    flex-direction: column;
+                    .heading {
+                        @include mobile-heading-3();
+                        color: $NeutralGrey_120;
+                        margin: 2px 4px;
+                    }
+                    
+                    .miniDetails {
+                        margin: 0 0px;
+                        display: flex;
+                        justify-content: flex-start;
+                        
+                        .items {
+                            display: flex;
+                            // border: 1px solid black;
+                            align-items: center;
+                            margin: 0 5px 5px 0px;
+                            padding: 0 0px;
+                            .icon {
+                                margin: 0 2px;
+                            }
+
+                        }
+                    }
+                }
+                .button{
+                    width: 100%; 
+                }
+            }
+        }
+        .outlinedButton {
+            @include center();
+            margin: 0;
+        }
+        
+    
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .container {
+        .wrapper {
+            .header {
+                @include desktop-heading-2();
+            }
+            .paragraph {
+                @include desktop-body-1();
+            }
+            .gridContainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 1fr);
+                .card{
+                    .details {
+                        .heading {
+                            @include desktop-heading-4();
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
