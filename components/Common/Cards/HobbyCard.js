@@ -3,7 +3,7 @@ import styles from '../../../styles/components/common/cards/HobbyCard.module.scs
 import Image from 'next/image'
 import CalendarIcon from '../../../public/images/icons/calendar.svg'
 import UserIcon from '../../../public/images/icons/user.svg'
-import {SolidButton} from '../../components'
+import {SolidButton} from '../../index'
 
 const HobbyCard = ({hobby}) => {
   return (

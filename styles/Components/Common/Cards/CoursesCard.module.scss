@@ -11,7 +11,7 @@
                             'details'
                             'button'
                             'footer';
-        // border: 1px solid black;
+        
         max-width: 253px;
         .imageContainer{
             grid-area: image;
@@ -24,7 +24,6 @@
             grid-area: heading;
             @include mobile-heading-3();
             color: $NeutralGrey_120;
-            // border: 1px solid black;
             h5{
                 margin: 0;
             }
@@ -33,7 +32,6 @@
             grid-area: paragraph;
             @include mobile-body-2();
             color: $NeutralGrey_110;
-            // border: 1px solid black;
             p{
                 margin: 0;
             }
@@ -45,10 +43,10 @@
             .section1, .section2{
                 display: flex;
                 align-items: center;
-                p{
+                span{
                     display: flex;
                     align-items: center;
-                    margin-right: 5px;
+                    margin: 5px 5px 5px 0;
                 }
             } 
         }
@@ -58,6 +56,7 @@
         }
         .footer{
             grid-area: footer;
+            margin: 5px 1px;
         }
     }
 }

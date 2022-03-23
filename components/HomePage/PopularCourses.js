@@ -2,7 +2,9 @@ import React from 'react'
 import chess from '../../public/images/hobbies/chess.png'
 import dance from '../../public/images/hobbies/dance.png'
 import styles from '../../styles/components/homepage/PopularCourses.module.scss'
-import {CoursesCard} from '../components'
+import {CoursesCard} from '../index'
+import ChessPlayers from '../../public/images/icons/100chessplayers.svg'
+import Dancers from '../../public/images/icons/100dancers.svg'
 
 const courseArray = [
     {
@@ -12,7 +14,8 @@ const courseArray = [
         description: 'This universal chess training for beginners teaches you the nitty-gritty of what goes behind winning the ...',
         time: '4 weeks',
         duration: '60mins/session',
-        age: '12-100 yrs'
+        age: '12-100 yrs',
+        icon: <ChessPlayers />
 
     },
     {
@@ -22,7 +25,8 @@ const courseArray = [
         description: 'Be it Bollywood dance classes or freestyle, you are going to enjoy your time and let go of all your ...',
         time: '4 weeks',
         duration: '60mins/session',
-        age: '12-100 yrs'
+        age: '12-100 yrs',
+        icon: <Dancers />
 
     },
     {
@@ -32,7 +36,8 @@ const courseArray = [
         description: 'This universal chess training for beginners teaches you the nitty-gritty of what goes behind winning the ...',
         time: '4 weeks',
         duration: '60mins/session',
-        age: '12-100 yrs'
+        age: '12-100 yrs',
+        icon: <ChessPlayers />
 
     },
     {
@@ -42,7 +47,8 @@ const courseArray = [
         description: 'Be it Bollywood dance classes or freestyle, you are going to enjoy your time and let go of all your ...',
         time: '4 weeks',
         duration: '60mins/session',
-        age: '12-100 yrs'
+        age: '12-100 yrs',
+        icon: <Dancers />
 
     },
     

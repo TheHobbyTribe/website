@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        // padding: 10px 0;
         .header{
             @include center();
             @include mobile-heading-2();
@@ -43,6 +44,7 @@
 @media screen and (min-width: 1024px) {
     .container {
         height: 100%;
+        // border: 1px solid black;
         .wrapper {
             display: grid;
             grid-template-areas: 'contentText contentText image';
@@ -52,9 +54,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 0;
-                // border: 1px solid blanchedalmond;
-                margin: 0 20px;
-                height: 100%;
+                margin: 5px 10px 0 20px;
                 .header{
                     @include desktop-heading-2();
                     color: $White;
@@ -62,24 +62,27 @@
                     margin: 2% 10%;
                     p{
                         margin: 0;
+                        // border: 1px solid black;
                     }
                 }
                 .paragraph {
                     text-align: left;
-                    margin: 2% 10%;
+                    margin: 0 10%;
                     @include desktop-body-1();
                     color: $White;
                     padding: 0;
                     p{
                         margin: 0;
                         padding: 0;
+                        // border: 1px solid black;
                     }
                 }
                 .button {
                     justify-self: end;
                     align-self: start;
-                    margin: 2% 10%;
+                    margin: 1% 10% 0 10%;
                     padding: 0;
+                    // border: 1px solid black;
                 }
             }
             

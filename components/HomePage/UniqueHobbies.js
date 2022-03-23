@@ -7,7 +7,7 @@ import painting from '../../public/images/hobbies/painting.png'
 import photoshop from '../../public/images/hobbies/photoshop.png'
 import CalendarIcon from '../../public/images/icons/calendar.svg'
 import UserIcon from '../../public/images/icons/user.svg'
-import { SolidButton, OutlinedButton, HobbyCard } from '../components'
+import { SolidButton, OutlinedButton, HobbyCard } from '../index'
 
 
 

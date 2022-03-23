@@ -8,11 +8,9 @@
   align-items: center;
   justify-content: center;
   margin: 50px 0px;
-  // border: 1px solid black;
   .wrapper {
     @include center();
     width: 100%;
-    max-width: 1440px;
     display: grid;
     grid-template-areas: 'title'
                          'image'
@@ -35,9 +33,7 @@
       .button {
         grid-area: button;
         min-width: 178px;
-        // align-self: center;
         justify-self: center;
-        // display: flex;
       }
     }
     
@@ -45,17 +41,14 @@
         grid-area: image;
         display: block;
         width: 100%;
-        // max-width: 500px;
-        // max-height: 250px;
         justify-self: center;
-        // @include center();
-        // padding: 0 10%;
       }
     
 }
 
 @media screen and (min-width: 1024px) {
   .container {
+    margin-left: 5% ;
     .wrapper {
       display: grid;
       grid-template-areas: 'heading image'
@@ -68,15 +61,15 @@
         align-self: end;
         padding: 0 10%;
         text-align: left;
+        h3{
+          margin: 0 0 15px 0;
+        }
       }
       .imageContainer {
         grid-area: image;
-        // justify-self: center;
-        // align-self: center;
-        // border: 1px solid black;
-        display: block;
-        width: 767px;
+        width: 667px;
         height: 100%;
+        
       }
       .paragraph {
         padding: 0 10%; 
@@ -89,7 +82,6 @@
       }
       .button {
         grid-area: button;
-        // max-width: 200px;
         align-self: start;
         justify-self: start;
         padding: 5% 10%;

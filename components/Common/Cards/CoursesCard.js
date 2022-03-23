@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../../styles/components/common/cards/CoursesCard.module.scss'
-import SolidButton from '../buttons/SolidButton'
+import {SolidButton} from '../../index'
 import CalendarIcon from '../../../public/images/icons/calendar.svg'
 import UserIcon from '../../../public/images/icons/user.svg'
 import TimerIcon from '../../../public/images/icons/timer.svg'
@@ -21,18 +21,18 @@ const CoursesCard = ({course}) => {
         </div>
         <div className={styles.details}>
           <div className={styles.section1}>
-            <p> <CalendarIcon /> &nbsp; {course.time}</p>
-            <p> <TimerIcon /> &nbsp; {course.duration}</p>
+            <span> <CalendarIcon /> &nbsp; {course.time}</span>
+            <span> <TimerIcon /> &nbsp; {course.duration}</span>
           </div>
           <div className={styles.section2}>
-            <p><UserIcon /> &nbsp; {course.time}</p>
+            <span><UserIcon /> &nbsp; {course.time}</span>
           </div>
         </div>
         <div className={styles.button}>
           <SolidButton text="Get Started" />
         </div>
         <div className={styles.footer}>
-          {course.title[0] === 'C' ? '100+ Chess Players' : '100+ Dancers'}
+          {course.icon}
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { UniqueHobbies,Quiz,GlobalInSpirit,PopularCourses,Tribe, Footer } from '../components/components'
+import { UniqueHobbies,Quiz,GlobalInSpirit,PopularCourses,Tribe, Footer } from '../components/index'
 
 
 

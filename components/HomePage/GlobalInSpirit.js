@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../../styles/components/homepage/GlobalInSpirit.module.scss'
 import worldmap from '../../public/images/misc/worldmap.png'
 import Image from 'next/image'
-import { SolidButton } from '../components'
+import { SolidButton } from '../index'
 
 
 const GlobalInSpirit = () => {

@@ -4,13 +4,11 @@
 
 .container {
     height: 100%;
-    // border: 1px solid black;
     display: flex;
     justify-content: center;
-    // margin: 10px;
+    margin-left: 5%;
     .wrapper {
         width: 100%;
-        max-width: 1440px;
         display: grid;
         grid-template-areas: 'image'
                              'heading'
