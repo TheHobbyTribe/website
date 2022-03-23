@@ -17,7 +17,7 @@ const Tribe = () => {
             </div>
             <div className={styles.heading}>
                 <div className={styles.subheading1}>
-                    <h3>A Tribe ?</h3>
+                    <h3>A Tribe ?&nbsp;</h3>
                 </div>
                 <div className={styles.subheading2}>
                     <h3>A Family <PurpleLine /></h3>

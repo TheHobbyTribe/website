@@ -39,6 +39,8 @@
             @include center();
             color: $Black;
             .subheading2 {
+                // border: 1px solid black;
+                padding-top: 5px;
                 h3 {
                     display: flex;
                     flex-direction: column;

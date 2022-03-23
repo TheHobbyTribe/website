@@ -1,0 +1,168 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+.container{
+    height: 100%;
+    // min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    .wrapper{
+        display: grid;
+        grid-template-areas: 'title'
+                             'paragraph'
+                             'section1'
+                             'section2'
+                             'button';
+        .heading{
+            grid-area: title;
+            @include mobile-heading-2();
+            color: $Black;
+            display: flex;
+            @include center();
+            // border: 1px solid black;
+            align-self: end;
+            p{
+                margin: 0;
+            }
+            .item2{
+                padding-top: 6px;
+                p{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }  
+            }
+            
+        }
+        .paragraph{
+            grid-area: paragraph;
+            // border: 1px solid black;
+            @include mobile-body-1();
+            color: $NeutralGrey_110;
+            text-align: center;
+            align-self: center;
+            margin: 0 10%;
+            p{
+                margin: 0;
+            }
+        }
+        .section1{
+            grid-area: section1;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 10px 20px;
+            // border: 1px solid black;
+            h5{
+                margin: 0;
+            }
+            .imageContainer{
+                width: 100%;
+                // border: 1px solid black;
+            }
+            .subheading{
+                @include mobile-heading-3();
+                color: $NeutralGrey_120;
+                align-self: flex-start;
+                margin-top: 5px;
+                // border: 1px solid black;
+                
+            }
+            .subparagraph{
+                @include mobile-body-2();
+                color: $NeutralGrey_110;
+                align-self: flex-start;
+                padding-right: 30px;
+                p{
+                    margin: 0;
+                }
+            }
+            
+        }
+        .section2{
+            grid-area: section2;
+            justify-self: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 10px 20px;
+            // border: 1px solid black;
+            h5{
+                margin: 0;
+            }
+            .imageContainer{
+                width: 100%;
+                // border: 1px solid black;
+            }
+            .subheading{
+                @include mobile-heading-3();
+                color: $NeutralGrey_120;
+                align-self: flex-start;
+                margin-top: 5px;
+                // border: 1px solid black;
+                
+            }
+            .subparagraph{
+                @include mobile-body-2();
+                color: $NeutralGrey_110;
+                align-self: flex-start;
+                padding-right: 30px;
+                p{
+                    margin: 0;
+                }
+            }
+            
+        }
+        .button{
+            grid-area: button;
+            justify-self: center;
+            width: 100%;
+            max-width: 200px;
+            margin: 40px 0;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container{
+        margin-top: 40px;
+        .wrapper{
+            display: grid;
+            grid-template-areas: 'title title'
+                                 'paragraph paragraph'
+                                 'section1 section2'
+                                 'button button';
+            padding-bottom: 40px;
+            // border: 1px solid black;
+            .heading{
+                @include desktop-heading-2();
+                // border: 1px solid black;
+                // margin-top: 10px;
+            }
+            .paragraph{
+                @include desktop-body-1();
+                // border: 1px solid black;
+                margin-top: 10px;
+                p{
+                    margin: 0;
+                    // border: 1px solid black;
+                }
+            }
+            .section1{
+                margin-top: 50px;
+                // border: 1px solid black;
+                justify-self: end;
+            }
+            .section2{
+                margin-top: 50px;
+                justify-self: start;
+                // border: 1px solid black;
+            }
+        }
+    }
+}
