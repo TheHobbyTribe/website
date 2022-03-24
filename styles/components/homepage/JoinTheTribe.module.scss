@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 30px;
     .wrapper{
         display: grid;
         grid-template-areas: 'title'
@@ -57,7 +57,7 @@
             max-width: 600px;
             margin: 10px 20px;
             // border: 1px solid black;
-            h5{
+            p{
                 margin: 0;
             }
             .imageContainer{
@@ -91,7 +91,7 @@
             max-width: 600px;
             margin: 10px 20px;
             // border: 1px solid black;
-            h5{
+            p{
                 margin: 0;
             }
             .imageContainer{

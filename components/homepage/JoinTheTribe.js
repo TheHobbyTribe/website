@@ -37,7 +37,7 @@ const JoinTheTribe = () => {
                     />
                 </div>
                 <div className={styles.subheading}>
-                    <h5>Buy membership @ just ₹99</h5>
+                    <p>Buy membership @ just ₹99</p>
                 </div>
                 <div className={styles.subparagraph}>
                     <p>
@@ -57,7 +57,7 @@ const JoinTheTribe = () => {
                     />
                 </div>
                 <div className={styles.subheading}>
-                    <h5>Get invited by a friend</h5>
+                    <p>Get invited by a friend</p>
                 </div>
                 <div className={styles.subparagraph}>
                     <p>
