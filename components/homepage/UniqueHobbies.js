@@ -57,7 +57,7 @@ const UniqueHobbies = () => {
             <div className={styles.gridContainer}>
                 {hobbyArray.map(hobby => {
                     return (
-                        <div key={hobby.id}>
+                        <div className={styles.cardContainer} key={hobby.id}>
                             <HobbyCard hobby={hobby} />
                         </div>
                     )

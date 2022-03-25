@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Unleash, Why, ExploreCategories, UniqueHobbies,Quiz,GlobalInSpirit,PopularCourses,Tribe, Footer} from '../components/index'
+import { Navbar, Unleash, Why, ExploreCategories, JoinTheTribe, Testimonial, UniqueHobbies,Quiz,GlobalInSpirit,PopularCourses,Tribe, Footer} from '../components/index'
 
 
 
@@ -10,6 +10,8 @@ const home = () => {
       <Unleash/>
       <Why/>
       <ExploreCategories/>
+      <Testimonial />
+      <JoinTheTribe />
       <UniqueHobbies />
       <Quiz />
       <GlobalInSpirit />

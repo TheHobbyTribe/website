@@ -5,6 +5,7 @@ import Image from 'next/image'
 import PurpleLine from '../../public/images/misc/purpleLine.svg'
 import TwistedLine from '../../public/images/icons/twistedline.svg'
 import Envelope from '../../public/images/icons/envelope.svg'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg'
 import { SolidButton } from '../index'
 
 
@@ -17,7 +18,7 @@ const Tribe = () => {
             </div>
             <div className={styles.heading}>
                 <div className={styles.subheading1}>
-                    <h3>A Tribe ?</h3>
+                    <h3>A Tribe ?&nbsp;</h3>
                 </div>
                 <div className={styles.subheading2}>
                     <h3>A Family <PurpleLine /></h3>
@@ -51,7 +52,7 @@ const Tribe = () => {
                 </div>
             </div>
             <div className={styles.button}>
-                <SolidButton text="Join The Tribe &#10142;" />
+                <SolidButton text="Join The Tribe" icon={<ArrowRight />} />
             </div>    
         </div>
     </div>
