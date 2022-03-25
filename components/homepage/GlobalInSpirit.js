@@ -3,6 +3,7 @@ import styles from '../../styles/components/homepage/GlobalInSpirit.module.scss'
 import worldmap from '../../public/images/misc/worldmap.png'
 import Image from 'next/image'
 import { SolidButton } from '../index'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg'
 
 
 const GlobalInSpirit = () => {
@@ -19,7 +20,7 @@ const GlobalInSpirit = () => {
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis accusamus praesentium culpa reprehenderit repellat minima!
             </div>
             <div className={styles.button}>
-                <SolidButton text="Join the Tribe &#10142;" className={styles.buttonText} />
+                <SolidButton text="Join the Tribe" icon={<ArrowRight />} className={styles.buttonText} />
             </div>
             <div className={styles.imageContainer}>
                 <Image 

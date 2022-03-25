@@ -5,6 +5,7 @@ import getinvited from '../../public/images/misc/getinvited-blue.png'
 import Image from 'next/image'
 import { SolidButton } from '..'
 import GreenLine from '../../public/images/misc/greenLine.svg'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg'
 
 
 const JoinTheTribe = () => {
@@ -66,7 +67,7 @@ const JoinTheTribe = () => {
                 </div>
             </div>
             <div className={styles.button}>
-                <SolidButton text="Join the tribe &#10142;" />
+                <SolidButton text="Join the tribe" icon={<ArrowRight />} />
             </div>
         </div>
     </div>

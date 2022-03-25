@@ -1,0 +1,126 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+
+.container{
+    height: 100%;
+    background-color: #FFDAD4;
+    border-bottom: 5px solid $Orange-80;
+    p{
+        margin: 0;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-areas: 'section1'
+                             'section2';
+        .section1{
+            grid-area: section1;
+            @include center();
+            flex-direction: column;
+            .info{
+                text-align: center;
+                margin: 20px 0 10px 0;
+                @include mobile-overline();
+                color: $Orange-100;
+            }
+            .header{
+                margin: 10px 0 20px 0;
+                text-align: center;
+                @include mobile-heading-2();
+                color: $Black;
+            }
+            .paragraph1{
+                margin-bottom: 30px;
+                max-width: 450px;
+                text-align: center;
+                @include mobile-body-1();
+                color: $NeutralGrey_110;
+            }
+        }
+        .section2{
+            grid-area: section2;
+            @include center();
+            flex-direction: column;
+            .imageContainer{
+                display: block;
+                width: 100%;
+                max-width: 450px;
+                
+            }
+            .name{
+                margin-left: 20px;
+                width: 100%;
+                max-width: 450px;
+                text-align: left;
+               @include mobile-heading-3();
+               color: $Black;         
+            }
+            .designation{
+                text-align: left;
+                max-width: 450px;
+                width: 100%;
+                @include mobile-body-2();
+                color: $NeutralGrey_110;
+                margin: 0 0 16px 20px;
+            }
+            .paragraph2{
+                margin: 0 0 30px 20px;
+                width: 100%;
+                max-width: 450px;
+                @include mobile-body-1();
+                color: $NeutralGrey_120;
+            }
+            
+            
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container{
+        padding: 100px;
+        .wrapper{
+            grid-template-areas: 'section1 section2';
+            .section1 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 5% 0 0 25%;
+                .info{
+                    text-align: left;
+                    @include desktop-overline();
+                    margin-bottom: 10px;
+                }
+                .header{
+                    text-align: left;
+                    margin-bottom: 20px;
+                    @include desktop-heading-2();
+                }
+                .paragraph1{
+                    margin: 0;
+                    text-align: left;
+                    @include desktop-body-2();
+                }
+            }
+            .section2 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-left: 10%;
+                .name{
+                    @include desktop-heading-4();
+                }
+                .designation{
+                    @include desktop-body-2();
+                }
+                .paragraph2{
+                    @include desktop-body-1();
+                    max-width: 700px;
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,11 +1,12 @@
 import React from 'react'
-import { UniqueHobbies,Quiz,GlobalInSpirit,PopularCourses,Tribe, Footer, JoinTheTribe } from '../components/index'
+import { UniqueHobbies,Quiz,GlobalInSpirit,PopularCourses,Tribe, Footer, JoinTheTribe, Testimonial } from '../components/index'
 
 
 
 const home = () => {
   return (
     <div>
+      <Testimonial />
       <JoinTheTribe />
       <UniqueHobbies />
       <Quiz />
