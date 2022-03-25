@@ -1,0 +1,141 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 16px;
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'heading'
+                             'paragraph'
+                             'reasonsContainer'
+                             'block'
+                             'blockImage'
+                             'blockTitle'
+                             'blockPara'
+                             'button';
+        .heading {
+            grid-area: heading;
+            display: flex;
+            width: 100%;
+            @include mobile-heading-2();
+            @include center();
+            color: $Black;
+            .paragraph {
+                    grid-area: paragraph;
+                    display: flex;
+                    @include mobile-body-1();
+                    @include center();
+                    color: $NeutralGrey_100;
+            }
+        }
+        .reasonsContainer{
+            // grid-area: reasonsContainer;
+            display: flex;
+            flex-direction: column;
+        }
+            .block{
+                @include center();
+                display: flex;
+                flex-direction: column;
+                padding: 32px 0px;
+            }
+                .blockTitle{
+                    @include mobile-heading-3();
+                    display: flex;
+                    color: $Black;
+                }
+                .blockPara{
+                    width: 317px;
+                    color: $NeutralGrey_110;
+            }
+        
+        .button {
+            // max-width: 343px;
+            width: 100%;
+            grid-area: button;
+            // align-self: center;
+            justify-self: center;
+            padding: 10%;
+        }
+        
+    }
+
+    
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        margin: 0 56px;
+        .wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-areas: 'heading'
+                                 'paragraph'
+                                 'reasonsContainer'
+                                 'block'
+                                 'blockImage'
+                                 'blockTitle'
+                                 'blockPara'
+                                 'button';
+            .heading {
+                grid-area: heading;
+                display: flex;
+                width: 100%;
+                @include desktop-heading-2;
+                @include center();
+                color: $Black;
+                .paragraph {
+                        grid-area: paragraph;
+                        display: flex;
+                        @include desktop-body-1();
+                        @include center();
+                        color: $NeutralGrey_100;
+                        // padding-right: 56px;
+                }
+            }
+            .reasonsContainer{
+                // grid-area: reasonsContainer;
+                display: flex;
+                flex-direction: row;
+                @include center();
+                border: 1px solid black
+            }
+                .block{
+                    @include center();
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px 32px;
+                }
+                    .blockImage{
+                        height: 128px;
+                    }
+                    .blockTitle{
+                        @include desktop-heading-3();
+                        display: flex;
+                        color: $Black;
+                    }
+                    .blockPara{
+                        @include desktop-body-2();
+                        color: $NeutralGrey_110;
+                        width: 317px;
+                }
+            
+            .button {
+                // max-width: 198px;
+                width: 60%;
+                // grid-area: button;
+                // align-self: center;
+                justify-self: center;
+                // padding: 10%;
+            }
+            
+        }
+    
+        
+    }
+}

@@ -1,0 +1,190 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .wrapper {
+        width: 100%;
+        background-image: url('../../../public/images/misc/Checkered_BG_Vertical.png');
+        display: grid;
+        grid-template-areas: 
+                             'heading'
+                             'featuresGrid'
+                             'button'
+                             'exploreCoursesText'
+                             'image';
+        .heading {
+            grid-area: heading;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            @include mobile-heading-1();
+            @include center();
+            color: $Black;
+            margin: 16px;
+            // .subheading1{
+            //     h3{
+            //         display: flex;
+            //         flex-direction: row;
+            //     }
+            // }
+            // .subheading2 {
+            //     h3 {
+            //         display: flex;
+            //         flex-direction: column;
+            //         align-items: center;
+            //     }
+            // }
+        }
+        
+        .featuresGrid{
+            grid-area: featuresGrid;
+            display: grid;
+            // grid-template-areas: 'feature1' 'feature2'
+            //                       'feature3' 'feature4';
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: auto auto;
+            grid-row-gap: auto auto;
+            align-items: center;
+            // grid-template-columns: repeat(2, 1fr);
+
+            // flex-basis: (100 / 2 ) * 1%;
+            
+            border: 1px solid black
+        }
+            .feature1{
+                grid-area: feature1;
+                display: flex;
+                flex-direction: row;
+
+                border: 1px solid black
+            }
+            .feature2{
+                grid-area: feature2;
+                display: flex;
+                flex-direction: row;
+
+                border: 1px solid black
+            }
+            .feature3{
+                grid-area: feature3;
+                display: flex;
+                flex-direction: row;
+
+                border: 1px solid black
+            }
+            .feature4{
+                grid-area: feature4;
+                display: flex;
+                flex-direction: row;
+
+                border: 1px solid black
+            }
+            .featureTextBox{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                border: 1px solid black
+            }
+
+            
+            .imageContainer {
+                grid-area: image;
+                display: flex;
+                justify-content: flex-end;
+                width: 100% !important;
+                height: 100% !important;
+                .image {
+                    // border: 1px solid black;
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+    }
+        .exploreCoursesText{
+            @include mobile-button-large;
+            color: $Black;
+        }
+        .button {
+            // max-width: 343px;
+            width: 178px;
+            height: 48px;
+            grid-area: button;
+            
+            padding: 10%;
+        }
+    
+}
+
+@media screen and (min-width: 769px) {
+    .container {
+        height: 100%;
+        // border: 1px solid black;
+        // margin: 10px;
+        .wrapper {
+            display: grid;
+            // grid-template-areas: 'image'
+            //                      'image'
+            //                      'image'
+            //                      'heading'
+            //                      'paragraph'
+            //                      'section-1'
+            //                      'section-2'
+            //                      'button';
+            grid-template-areas: 'heading heading image'
+                                 'featuresGrid featuresGrid image'
+                                 'featuresGrid featuresGrid image'
+                                 'button . image'
+                                  'exploreCoursesText . image';
+            .heading {
+                grid-area: heading;
+                display: flex;
+                @include mobile-heading-2();
+                @include center();
+                color: $Black;
+                .subheading2 {
+                    h3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+            .button {
+                // max-width: 343px;
+                width: 100%;
+                grid-area: button;
+                // align-self: center;
+                justify-self: center;
+                padding: 10%;
+            }
+            .imageContainer {
+                // border: 1px solid black;
+                grid-area: image;
+                display: block;
+                // position: relative;
+                width: 100%;
+                // max-width: 100vw;
+                max-width: 814px;
+                min-width: 200px;
+                // height: 100vh;
+                justify-self: end;
+                .image{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    
+        
+    }
+}

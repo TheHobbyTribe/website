@@ -1,0 +1,30 @@
+@import '../../../colors';
+@import '../../../fonts';
+@import '../../../helper';
+
+.container{
+    .wrapper{
+       display: grid;
+       @include center();
+       grid-template-areas: 'heading'
+                            'image';
+        
+        // max-width: 253px;
+        }
+        .heading{
+            grid-area: heading;
+            @include mobile-heading-4();
+            // color: $NeutralGrey_120;
+            
+        }
+        .imageContainer{
+            grid-area: image;
+            .image{
+                display: block;
+                width: 100%;
+            }
+
+        
+      
+    }
+}
