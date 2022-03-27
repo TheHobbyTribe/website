@@ -1,0 +1,51 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+
+.container {
+    height: 100%;
+    .wrapper{
+        .heading{
+            @include mobile-heading-1();
+            @include center();
+            color: $Black;
+            h4{
+                margin: 0;
+            }
+        }
+        .paragraph{
+            @include mobile-body-2();
+            color: $NeutralGrey_110;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            .contentContainer{
+                flex: 0 0 auto;
+                margin: 0 10px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        margin: 10%;
+        .wrapper{
+            // margin: 0 20%;
+            @include center();
+            flex-direction: column;
+            .heading{
+                @include desktop-heading-2();
+            }
+            .paragraph{
+                @include desktop-body-1();
+                margin: 0 20%;
+            }
+        }
+    }
+}

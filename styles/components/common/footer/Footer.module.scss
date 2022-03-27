@@ -1,0 +1,180 @@
+@import '../../../colors';
+@import '../../../fonts';
+@import '../../../helper';
+
+.container {
+    background-color: #FFF8F6;
+    width: 100%;
+    height: 100%;
+    padding: 0 5%;
+    border-top: 5px solid #FBB2A8;
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'logo'
+                             'paragraph'
+                             'formHeading'
+                             'formContainer'
+                             'hyperlinks'
+                             'contact'
+                             'socialMedia'
+                             'copyright';
+
+        .logo {
+            padding: 2% 1%;
+            grid-area: logo;
+            justify-self: start;
+            
+            .image {
+                display: block;
+                width: 100%;
+                max-width: 104px;
+            }
+        }
+        .paragraph {
+            padding: 2%;
+            grid-area: paragraph;
+            @include mobile-body-3();
+            color: $NeutralGrey_110;
+        }
+        .formHeading{
+            // padding: 2% 0 0 3%;
+            margin: 10px;
+            grid-area: formHeading;
+            @include mobile-subheading-1();
+            color: $Black;
+            p{
+                margin: 0;
+            }
+        }
+        .formContainer{
+            // padding: 0 2%;
+            margin: 10px;
+            grid-area: formContainer;
+            @include mobile-body-2();
+            justify-content: center;
+            display: flex;
+            .form {
+                margin-right: 15px;
+                padding: 10px 16px;
+                min-height: 40px;
+                width: 100%;
+                border: 1px solid #797979;
+                box-sizing: border-box;
+                border-radius: 4px;
+            }
+            .button {
+                @include mobile-button-small();
+                min-width: 150px;
+            }
+        }
+        .hyperlinks {
+            grid-area: hyperlinks;
+            @include mobile-body-2();
+            color: $NeutralGrey_120;
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+        .contact {
+            margin: 10px;
+            grid-area: contact;
+            display: flex;
+            flex-direction: column;
+            .subheading{
+                @include mobile-body-2();
+                color: $NeutralGrey_120;
+            }
+            .item1, .item2 {
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                p{
+                    margin: 0 10px;
+                }
+            }
+        }
+        .socialMedia{
+            grid-area: socialMedia;
+            display: flex;
+            padding: 3%;
+            .item {
+                margin: 0 10px;
+            }
+        }
+        .end {
+            grid-area: copyright;
+            padding: 0 3%;
+            display: flex;
+            justify-content: space-between;
+            color: $NeutralGrey_110;
+            @include mobile-helper();
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        .wrapper{
+            display: grid;
+            grid-template-areas: 'logo hyperlinks contact formHeading'
+                                'paragraph hyperlinks contact formContainer'
+                                '. . socialMedia .'
+                                'copyright copyright copyright copyright';
+            .logo{
+                .image {
+                    min-width: 190px;
+                }
+            }
+            .paragraph{
+                @include desktop-body-1();
+            }
+            .formHeading{
+                @include desktop-heading-4();
+                align-self: end;
+            }
+            .formContainer{
+                @include desktop-body-2();
+                display: flex;
+                flex-direction: column;
+                .form {
+                    margin-right: 0;
+                    padding: 10px 16px;
+                    min-height: 52px;
+                    width: 100%;
+                    border: 1px solid #797979;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                }
+                .button {
+                    @include mobile-button-small();
+                    max-width: 150px;
+                    margin-top: 10px;
+                }
+            }
+            .hyperlinks{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-self: center;
+                a {
+                    margin: 10px 0;
+                }
+            }        
+            .contact {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                .subheading{
+                    @include desktop-body-1();
+                    color: $NeutralGrey_100;
+                }
+            }
+            .end{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../../colors';
+@import '../../../fonts';
+@import '../../../helper';
+
+.container{
+    .wrapper{
+       display: grid;
+       grid-template-areas: 'image'
+                            'heading'
+                            'paragraph'
+                            'details'
+                            'button'
+                            'footer';
+        
+        max-width: 253px;
+        .imageContainer{
+            grid-area: image;
+            .image{
+                display: block;
+                width: 100%;
+            }
+        }
+        .heading{
+            grid-area: heading;
+            @include mobile-heading-3();
+            color: $NeutralGrey_120;
+            h5{
+                margin: 0;
+            }
+        }
+        .paragraph{
+            grid-area: paragraph;
+            @include mobile-body-2();
+            color: $NeutralGrey_110;
+            p{
+                margin: 0;
+            }
+        }
+        .details{
+            grid-area: details;
+            @include mobile-body-2();
+            color: $NeutralGrey_110;
+            .section1, .section2{
+                display: flex;
+                align-items: center;
+                span{
+                    display: flex;
+                    align-items: center;
+                    margin: 5px 5px 5px 0;
+                }
+            } 
+        }
+        .button{
+            grid-area: button;
+            width: 100%;
+        }
+        .footer{
+            grid-area: footer;
+            margin: 5px 1px;
+        }
+    }
+}
