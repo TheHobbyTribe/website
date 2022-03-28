@@ -6,6 +6,10 @@ module.exports = {
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')],
 	},
+	compilerOptions: {
+		baseUrl: '.',
+	},
+	include: ['.'],
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/,
