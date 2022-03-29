@@ -1,0 +1,105 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+.container{
+    p{
+        margin: 0;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-areas: 'header'
+                             'paragraph'
+                             'image';
+        margin-left: 5%;
+        .header{
+            margin: 20px 0 10px 16px;
+            grid-area: header;
+            display: flex;
+            // border: 1px solid black;
+            .heading{
+                @include mobile-heading-1();
+                color: $Black;
+                display: flex;
+                flex-direction: column;
+                .item1{
+
+                }
+                .item2{
+                    max-width: 223px;
+                    // border: 1px solid black;
+                    p{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .smiley{
+                margin: 0 0 0 10px;
+            }
+        }
+        .paragraph{
+            // border: 1px solid brown;
+            margin: 10px 16px 10px 16px;
+            grid-area: paragraph;
+            @include mobile-body-1();
+            color: $NeutralGrey_100;
+        }
+        .imageContainer{
+            grid-area: image;
+            position: relative;
+            justify-content: flex-end;
+            width: 100%;
+            // max-width: 700px;
+            height: 100%;
+            // border: 1px solid black;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container{
+        .wrapper{
+            margin: 0;
+            grid-template-areas: 'header image'
+                                 'paragraph image'
+                                 'button image';
+            .header{
+                margin: 100px 0 50px 50px;
+                // border: 1px solid black;
+                // display: flex;
+                .heading{
+                    // border: 1px solid blue;
+                    width: 100%;
+                    @include desktop-heading-1();
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    .item2{
+                        max-width: 100%;
+                    }
+                    
+                }
+                .smiley{
+                    margin: 0;
+                    // width: 100%;
+                    // max-width: 50px;
+                    // border: 3px solid black;
+                }
+            }
+            .paragraph{
+                @include desktop-body-1();
+                margin: 20px 150px 50px 50px;
+                // border: 1px solid black;
+            }
+            .imageContainer{
+                margin: 0;
+                // min-width: 250px;
+                min-width: 500px;
+                // max-width: 700px;
+            }
+        }
+    }
+}

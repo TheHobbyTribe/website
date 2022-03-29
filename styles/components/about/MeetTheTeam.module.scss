@@ -1,0 +1,39 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+
+.container{
+    .wrapper{
+        p{
+            margin: 0;
+        }
+        @include center();
+        flex-direction: column;
+        .header{
+            @include mobile-heading-1();
+            color: $Black;
+        }
+        .team{
+            display: flex;
+            flex-wrap: wrap;
+            @include center();
+            // border: 1px solid black;
+            // margin: 0 10%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container{
+        .wrapper{
+            .header{
+                @include desktop-heading-1();
+            }
+            .team{
+                margin: 0 10%;
+            }
+        }
+    }
+}
