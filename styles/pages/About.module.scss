@@ -1,0 +1,9 @@
+@import '../colors';
+@import '../fonts';
+@import '../helper';
+
+@media screen and (max-width: 1024px) {
+    .disappear{
+        display: none;
+    }
+}

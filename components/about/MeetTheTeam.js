@@ -5,41 +5,49 @@ import {TeamMemberCard} from '../index'
 
 const team = [
     {
+        id: 1,
         image: member.src,
         name: 'Joshua Salins',
         designation: 'Co-founder & CEO'
     },
     {
+        id: 2,
         image: member.src,
         name: 'Gaurav Mirchandani',
         designation: 'Co-founder & COO'
     },
     {
+        id: 3,
         image: member.src,
         name: 'Joshua Salins',
         designation: 'Co-founder & CEO'
     },
     {
+        id: 4,
         image: member.src,
         name: 'Gaurav Mirchandani',
         designation: 'Co-founder & COO'
     },
     {
+        id: 5,
         image: member.src,
         name: 'Joshua Salins',
         designation: 'Co-founder & CEO'
     },
     {
+        id: 6,
         image: member.src,
         name: 'Gaurav Mirchandani',
         designation: 'Co-founder & COO'
     },
     {
+        id: 7,
         image: member.src,
         name: 'Joshua Salins',
         designation: 'Co-founder & CEO'
     },
     {
+        id: 8,
         image: member.src,
         name: 'Gaurav Mirchandani',
         designation: 'Co-founder & COO'
@@ -58,7 +66,7 @@ const MeetTheTeam = () => {
             <div className={styles.team}>
                 {team.map(individual => {
                     return(
-                        <div>
+                        <div key={individual.id}>
                             <TeamMemberCard member={individual} />
                         </div>
                     )

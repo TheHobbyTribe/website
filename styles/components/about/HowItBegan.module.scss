@@ -7,7 +7,7 @@
     .wrapper{
         @include center();
         flex-direction: column;
-        margin: 10px 30px;
+        margin: 10px 50px;
         text-align: center;
         p{
             margin: 0;
@@ -27,6 +27,7 @@
 @media screen and (min-width: 1024px) {
     .container{
         .wrapper{
+            margin: 10px 150px;
             .header{
                 @include desktop-heading-2();
             }

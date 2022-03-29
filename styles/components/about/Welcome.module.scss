@@ -17,7 +17,7 @@
             grid-area: header;
             display: flex;
             // border: 1px solid black;
-            .heading{
+            .title{
                 @include mobile-heading-1();
                 color: $Black;
                 display: flex;
@@ -54,6 +54,9 @@
             height: 100%;
             // border: 1px solid black;
         }
+        .button{
+            display: none;
+        }
 
     }
 }
@@ -67,10 +70,12 @@
                                  'paragraph image'
                                  'button image';
             .header{
-                margin: 100px 0 50px 50px;
+                // justify-self: center;
+                align-self: center;
+                margin: 100px 0 0 50px;
                 // border: 1px solid black;
                 // display: flex;
-                .heading{
+                .title{
                     // border: 1px solid blue;
                     width: 100%;
                     @include desktop-heading-1();
@@ -91,14 +96,24 @@
             }
             .paragraph{
                 @include desktop-body-1();
-                margin: 20px 150px 50px 50px;
+                margin: 0px 150px 0px 50px;
                 // border: 1px solid black;
+                align-self: flex-start;
             }
             .imageContainer{
                 margin: 0;
                 // min-width: 250px;
                 min-width: 500px;
                 // max-width: 700px;
+            }
+            .button{
+                display: block;
+                grid-area: button;
+                align-self: flex-start;
+                margin-left: 50px;
+                // border: 1px solid black;
+                max-width: 200px;
+                margin-top: -30px;
             }
         }
     }

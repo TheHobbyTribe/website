@@ -4,6 +4,8 @@ import Smiley from '../../public/images/curves/BlueSmiley.svg'
 import BlueLine from '../../public/images/misc/blueLine.svg'
 import Image from 'next/image'
 import People from '../../public/images/faces/diversity.png'
+import {SolidButton} from '../../components/index'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg'
 
 const Welcome = () => {
   return (
@@ -11,10 +13,7 @@ const Welcome = () => {
         <div className={styles.wrapper}>
             {/* Header */}
             <div className={styles.header}>
-                <div className={styles.heading}>
-                    {/* <p>
-                        Welcome to&nbsp;<span>The Hobby Tribe <BlueLine /></span>
-                    </p> */}
+                <div className={styles.title}>
                     <div className={styles.item1}>
                         <p>
                             Welcome to&nbsp; 
@@ -25,14 +24,6 @@ const Welcome = () => {
                             The Hobby Tribe <BlueLine /> 
                         </p> 
                     </div>
-                    
-                    {/* <p> */}
-                         
-                        {/* <div className={styles.item}>
-                            Welcome to&nbsp;The Hobby Tribe
-                            <BlueLine />
-                        </div> */}
-                    {/* </p> */}
                 </div>
 
                 <div className={styles.smiley}>
@@ -57,6 +48,10 @@ const Welcome = () => {
                     objectFit='cover'
                     quality={100}
                 />
+            </div>
+
+            <div className={styles.button}>
+                <SolidButton text="Join the Tribe" icon={<ArrowRight />} />
             </div>
             
         </div>

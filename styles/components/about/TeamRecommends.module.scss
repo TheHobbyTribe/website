@@ -1,0 +1,47 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+
+.container{
+    // background-color: aqua;
+    height: 100%;
+    p{
+        margin: 0;
+    }
+    margin: 100px 0;
+    .wrapper{
+        .header{
+            @include mobile-heading-1();
+            color: $Black;
+            @include center();
+        }
+        .content{
+            margin: 20px;
+            .cardContainer{
+                // margin: 0 45%;
+                padding: 0 16px;
+                // border: 1px solid black;
+                
+            }
+        }
+        .button{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        .wrapper{
+            .header{
+                @include desktop-heading-2();
+            }
+            .button{
+                @include center();
+                margin-top: 30px;
+                // border: 1px solid black;
+            }
+        }
+    }
+}

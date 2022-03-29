@@ -13,6 +13,7 @@
         .header{
             @include mobile-heading-1();
             color: $Black;
+            margin: 50px 0;
         }
         .team{
             display: flex;
@@ -32,7 +33,7 @@
                 @include desktop-heading-1();
             }
             .team{
-                margin: 0 10%;
+                margin: 0 50px;
             }
         }
     }
