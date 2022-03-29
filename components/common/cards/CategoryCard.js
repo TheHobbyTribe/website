@@ -3,11 +3,11 @@ import styles from '../../../styles/components/common/cards/CategoryCard.module.
 
 
 const CategoryCard = ({category}) => {
-    console.log(category)
+    // console.log(category)
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        //Add a style tag for the backgroundColor here
+        {/* //Add a style tag for the backgroundColor here */}
         <div className={styles.heading}>
           {category.title}
         </div>

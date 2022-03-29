@@ -13,54 +13,57 @@
         grid-template-areas: 'heading'
                              'paragraph'
                              'reasonsContainer'
-                             'block'
-                             'blockImage'
-                             'blockTitle'
-                             'blockPara'
                              'button';
         .heading {
             grid-area: heading;
-            display: flex;
-            width: 100%;
+            margin: 0px 16px;
+            // padding: 0px 16px;
             @include mobile-heading-2();
             @include center();
             color: $Black;
-            .paragraph {
-                    grid-area: paragraph;
-                    display: flex;
-                    @include mobile-body-1();
-                    @include center();
-                    color: $NeutralGrey_100;
-            }
         }
+        .paragraph {
+                grid-area: paragraph;
+                // display: flex;
+                margin: 0px 16px;
+                @include mobile-body-1();
+                @include center();
+                color: $NeutralGrey_100;
+        }
+        
         .reasonsContainer{
-            // grid-area: reasonsContainer;
+            grid-area: reasonsContainer;
             display: flex;
             flex-direction: column;
-        }
+            // width: 100%;
+            margin: 0px 29px;
+        
             .block{
                 @include center();
                 display: flex;
                 flex-direction: column;
-                padding: 32px 0px;
-            }
+                margin: 32px 0px;
+            
                 .blockTitle{
                     @include mobile-heading-3();
-                    display: flex;
+                    // display: flex;
                     color: $Black;
                 }
                 .blockPara{
-                    width: 317px;
+                    max-width: 317px;
                     color: $NeutralGrey_110;
+                    @include mobile-body-2();
+                    text-align: center;
+                }
             }
-        
+        }
         .button {
             // max-width: 343px;
-            width: 100%;
+            // width: 100%;
             grid-area: button;
             // align-self: center;
             justify-self: center;
-            padding: 10%;
+            padding: 5%;
         }
         
     }
@@ -70,68 +73,71 @@
 
 @media screen and (min-width: 769px) {
     .container {
-        margin: 0 56px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        
+        margin: 0 16px;
         .wrapper {
             width: 100%;
             display: grid;
             grid-template-areas: 'heading'
                                  'paragraph'
                                  'reasonsContainer'
-                                 'block'
-                                 'blockImage'
-                                 'blockTitle'
-                                 'blockPara'
                                  'button';
             .heading {
                 grid-area: heading;
-                display: flex;
-                width: 100%;
-                @include desktop-heading-2;
+                margin: 0px 16px;
+                // padding: 0px 16px;
+                @include desktop-heading-2();
                 @include center();
                 color: $Black;
-                .paragraph {
-                        grid-area: paragraph;
-                        display: flex;
-                        @include desktop-body-1();
-                        @include center();
-                        color: $NeutralGrey_100;
-                        // padding-right: 56px;
-                }
             }
+            .paragraph {
+                    grid-area: paragraph;
+                    // display: flex;
+                    margin: 0px 169px;
+                    @include desktop-body-1();
+                    @include center();
+                    color: $NeutralGrey_100;
+            }
+            
             .reasonsContainer{
-                // grid-area: reasonsContainer;
+                grid-area: reasonsContainer;
                 display: flex;
                 flex-direction: row;
                 @include center();
-                border: 1px solid black
-            }
+                margin: 0px 56px;
+            
                 .block{
                     @include center();
                     display: flex;
                     flex-direction: column;
-                    padding: 0px 32px;
-                }
+                    
+                    margin: 32px 5px;
                     .blockImage{
                         height: 128px;
                     }
                     .blockTitle{
                         @include desktop-heading-3();
-                        display: flex;
+                        // display: flex;
                         color: $Black;
                     }
                     .blockPara{
-                        @include desktop-body-2();
+                        // width: 317px;
                         color: $NeutralGrey_110;
-                        width: 317px;
+                        @include desktop-body-2();
+                        text-align: center;
+                    }
                 }
-            
+            }
             .button {
-                // max-width: 198px;
-                width: 60%;
-                // grid-area: button;
+                // max-width: 343px;
+                // width: 100%;
+                grid-area: button;
                 // align-self: center;
                 justify-self: center;
-                // padding: 10%;
+                padding: 5%;
             }
             
         }

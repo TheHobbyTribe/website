@@ -6,7 +6,7 @@ import { Navbar, Unleash, Why, ExploreCategories, JoinTheTribe, Testimonial, Uni
 const home = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Unleash/>
       <Why/>
       <ExploreCategories/>

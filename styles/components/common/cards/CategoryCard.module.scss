@@ -5,26 +5,40 @@
 .container{
     .wrapper{
        display: grid;
+       width: auto;
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
        @include center();
        grid-template-areas: 'heading'
                             'image';
-        
+        // min-width: 0;
         // max-width: 253px;
-        }
         .heading{
-            grid-area: heading;
-            @include mobile-heading-4();
+            // grid-area: heading;
+            // @include mobile-heading-4();
+            @include mobile-subheading-1();
+            @include center();
+            min-width: 0;
+            // flex-wrap: wrap;
+            // width: 50%;
+            // padding: 5px;
             // color: $NeutralGrey_120;
-            
+            // border: 1px solid black;
         }
-        .imageContainer{
-            grid-area: image;
-            .image{
-                display: block;
-                width: 100%;
-            }
+        .image{
+            display: block;
+            // width: 50%;
+        }
+    } 
+}
 
-        
-      
+@media screen and (min-width: 769px) {
+    .container{
+        .wrapper{
+            .heading{
+                @include desktop-heading-4();
+            }
+        }
     }
 }

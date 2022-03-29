@@ -5,7 +5,8 @@
 
 .container {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    // align-content: center;
     height: 100%;
     .wrapper{     
         display: grid;
@@ -40,6 +41,7 @@
             @include mobile-body-1();
             color: $NeutralGrey_100;
             text-align: center;
+            margin: 16px;
         }
         .content{
             display: grid;
@@ -48,13 +50,14 @@
             justify-items: center;
             align-items: center;
             grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto; 
-            column-gap: 16px;
-            row-gap: 16px;
-            border: 1px solid black;
+            // grid-template-rows: auto auto auto;
+            gap: 16px; 
+            // column-gap: 16px;
+            // row-gap: 16px;
+            // border: 1px solid black;
             .contentContainer{
                 flex: 0 0 auto;
-                max-width: 164px;
+                width: 164px;
                 height: 88px;
                 padding: 8px;
                 border: 1px solid black;
@@ -63,7 +66,7 @@
         .outlinedButton {
             grid-area: OutlinedButton;
             @include center();
-            margin-top: 30px;
+            margin: 30px 16px;
         }
         
     }
@@ -72,8 +75,11 @@
 @media screen and (min-width: 769px) {
     .container {
         height: 100%;
+        justify-content: center;
         .wrapper{
-            padding: 0 10%;
+            width: 100%;
+            margin: 56px;
+            // padding: 0 10%;
             .imageContainer{
                 display: none;
             }
@@ -82,11 +88,6 @@
                 }
             .heading{
                 @include desktop-heading-2();
-                @include center();
-                color: $Black;
-                h4{
-                    margin: 0;
-                }
             }
             .paragraph{
                 @include desktop-body-1();
@@ -94,30 +95,31 @@
                 text-align: center;
             }
             .content{
-                display: grid;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
                 align-self: center;
                 justify-self: center;
                 justify-items: center;
+
+                justify-content: center;
                 align-items: center;
-                grid-template-columns: auto auto auto auto auto auto;
-                grid-template-rows: auto; 
-                column-gap: 16px;
-                row-gap: 16px;
+                
                 border: 1px solid black;
                 .contentContainer{
-                    flex: 0 0 auto;
+                    // flex: 0 0 auto;
                     align-items: center;
                     justify-items: center;
-                    max-width: 201px;
+                    width: 201px;
                     height:112px;
-                    border: 1px solid black;
                     padding: 8px;
+                    border: 1px solid black;
                 }
             }
             .outlinedButton {
                 grid-area: OutlinedButton;
-                // @include center();
-                // margin-top: 30px;
+                @include center();
+                margin-top: 30px;
             }
         }
     }

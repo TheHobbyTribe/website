@@ -19,13 +19,13 @@
                              'image';
         .heading {
             grid-area: heading;
-            display: flex;
+            // display: flex;
             width: 100%;
             flex-direction: row;
             @include mobile-heading-1();
             @include center();
             color: $Black;
-            margin: 16px;
+            // margin: 48px 16px 32px;
             // .subheading1{
             //     h3{
             //         display: flex;
@@ -44,85 +44,83 @@
         .featuresGrid{
             grid-area: featuresGrid;
             display: grid;
-            // grid-template-areas: 'feature1' 'feature2'
-            //                       'feature3' 'feature4';
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: auto auto;
-            grid-row-gap: auto auto;
-            align-items: center;
-            // grid-template-columns: repeat(2, 1fr);
-
-            // flex-basis: (100 / 2 ) * 1%;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            // grid-auto-flow: dense;
+            justify-content: center;
+            max-width: 550px;
+            grid-gap: 10px;
+            padding: 10px;
             
-            border: 1px solid black
-        }
-            .feature1{
-                grid-area: feature1;
+            border: 1px solid black;
+        
+            .feature{
                 display: flex;
-                flex-direction: row;
-
-                border: 1px solid black
-            }
-            .feature2{
-                grid-area: feature2;
-                display: flex;
-                flex-direction: row;
-
-                border: 1px solid black
-            }
-            .feature3{
-                grid-area: feature3;
-                display: flex;
-                flex-direction: row;
-
-                border: 1px solid black
-            }
-            .feature4{
-                grid-area: feature4;
-                display: flex;
-                flex-direction: row;
-
-                border: 1px solid black
-            }
-            .featureTextBox{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: space-between;
-
-                border: 1px solid black
-            }
-
-            
-            .imageContainer {
-                grid-area: image;
-                display: flex;
-                justify-content: flex-end;
-                width: 100% !important;
-                height: 100% !important;
-                .image {
-                    // border: 1px solid black;
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    object-fit: contain;
+                @include center();
+                min-width: 149px;
+                height: 48px;
+                border: 1px solid black;
+                .featureIcon{
+                    @include center();
+                    // min-width: 48px;
+                    // min-height: 48px;
+                    border: 1px solid black;
+                }
+                .featureTextBox{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 8px;
+                    // @include center();
+                    border: 1px solid black;
+                
+                    .featureTextOne{
+                        @include mobile-label-2();
+                        border: 0.2px solid blue;
+                    }
+                    .featureTextTwo{
+                        @include mobile-helper();
+                        color: $NeutralGrey_110;
+                        border: 0.2px solid blue;
+                    }
                 }
             }
+        }
+            
+        .imageContainer {
+            grid-area: image;
+            display: flex;
+            justify-content: flex-end;
+            // margin-top: -100px;
+            width: 100% !important;
+            height: 100% !important;
+            .image {
+                // border: 1px solid black;
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: contain;
+            }
+        }
     }
+        .button{
+            grid-area: button;
+            justify-self: left;
+
+            // width: 100%;
+            // max-width: 200px;
+            // margin: 40px 16px 16px;
+        }
         .exploreCoursesText{
+            grid-area: exploreCoursesText;
+            width: 100%;
+            // background-color: $White;
+            // max-width: 200px;
+            // margin: 0px 25px;
             @include mobile-button-large;
             color: $Black;
         }
-        .button {
-            // max-width: 343px;
-            width: 178px;
-            height: 48px;
-            grid-area: button;
-            
-            padding: 10%;
-        }
-    
+
 }
 
 @media screen and (min-width: 769px) {
@@ -140,11 +138,11 @@
             //                      'section-1'
             //                      'section-2'
             //                      'button';
-            grid-template-areas: 'heading heading image'
-                                 'featuresGrid featuresGrid image'
-                                 'featuresGrid featuresGrid image'
-                                 'button . image'
-                                  'exploreCoursesText . image';
+            grid-template-areas: 'heading heading image image'
+                                 'featuresGrid featuresGrid image image'
+                                 'featuresGrid featuresGrid image image'
+                                 'button . image image'
+                                  'exploreCoursesText . image image';
             .heading {
                 grid-area: heading;
                 display: flex;
@@ -159,14 +157,43 @@
                     }
                 }
             }
-            .button {
-                // max-width: 343px;
-                width: 100%;
-                grid-area: button;
-                // align-self: center;
-                justify-self: center;
-                padding: 10%;
-            }
+
+            .featuresGrid{
+                grid-area: featuresGrid;
+                display: grid;
+                // grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                grid-gap: 10px;
+                padding: 10px;
+                justify-content: center;
+                // border: 1px solid black;
+                .featureTemplate{
+                    display: flex;
+                    @include center();
+                    // border: 1px solid black;
+                    .featureIconTemplate{
+                        @include center();
+                        min-width: 88px;
+                        min-height: 88px;
+                        // border: 1px solid black;
+                    }
+                    .featureTextBoxTemplate{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        // @include center();
+                        // border: 1px solid black;
+                        
+                        .featureTextOneTemplate{
+                            @include desktop-label-2();
+                            // border: 0.2px solid blue;
+                        }
+                        .featureTextTwoTemplate{
+                            @include desktop-helper();
+                            // border: 0.2px solid blue;
+                        }
+                    }
+                }
             .imageContainer {
                 // border: 1px solid black;
                 grid-area: image;
@@ -183,8 +210,24 @@
                     height: 100%;
                 }
             }
-        }
+            .button{
+                grid-area: button;
+                justify-self: left;
     
+                // width: 100%;
+                // max-width: 200px;
+                // margin: 40px 16px 0px;
+            }
+            .exploreCoursesText{
+                grid-area: exploreCoursesText;
+                // width: 100%;
+                // max-width: 200px;
+                // margin: 0px 25px;
+                @include mobile-button-large;
+                color: $Black;
+            }
+        }
+        }
         
     }
 }

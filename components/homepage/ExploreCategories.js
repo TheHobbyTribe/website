@@ -63,7 +63,7 @@ const ExploreCategories = () => {
             </div>
             <div className={styles.paragraph}>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus nulla scelerisque placerat lectus elementum facilisis suscipit volutpat. Text here must emphasize that THT offers a wide variety of classes inlcuing some very unique ones. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien eu sed magna faucibus. 
                 </p>
             </div>
             <div className={styles.content}>

@@ -15,10 +15,10 @@ const Navbar =() => {
                 </div>
                 <div className= {styles.topRight}>
                     <ul className={styles.menu}>
-                        <li className={styles.menuItems}>Home</li>    
-                        <li className={styles.menuItems}>About Us</li>    
-                        <li className={styles.menuItems}>Find a hobby</li>    
-                        <li className={styles.menuItems}>Blog</li>        
+                        <li className={styles.menuItems}><Link href="/"><a>Home</a></Link></li> 
+                        <li className={styles.menuItems}><Link href="/about"><a>About Us</a></Link></li>    
+                        <li className={styles.menuItems}><Link href="/courses"><a>Find a hobby</a></Link></li>  
+                        <li className={styles.menuItems}><Link href="/blog"><a>Blog</a></Link></li>        
                     </ul>  
                     <div className={styles.buttonContainer}>
                         {/* Modify button according to login type  */}

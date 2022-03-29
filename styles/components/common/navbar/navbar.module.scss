@@ -9,12 +9,12 @@
     top: 0;
     z-index: 999;
     // padding: 0 5%;
-    // position: sticky; 
+    position: sticky; 
     
     background-color: #FFFFFF;
     border-bottom: 2px solid #EDEEF1;
 
-    border: 1px solid red;
+    // border: 1px solid red;
     .wrapper{
         display: flex;
         height: 100%;
@@ -35,18 +35,13 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 14px;
+            // padding: 14px;
             // width: auto;
             border: 1px solid rgb(22, 238, 58);
             .buttonContainer{
-                .button {
-                    // max-width: 343px;
-                    width: 100%;
-                    grid-area: button;
-                    // align-self: center;
-                    justify-self: center;
-                    padding: 10%;
-                }
+                // max-width: 68px;
+                width: 100%;;
+                border: 1px solid black;
             }
             // .button {
             //     @include mobile-button-small();
@@ -82,19 +77,19 @@
         top: 0;
         z-index: 999;
         // padding: 0 5%;
-        // position: sticky; 
+        position: sticky; 
         
         background-color: #FFFFFF;
         border-bottom: 2px solid #EDEEF1;
     
-        border: 1px solid red;
+        // border: 1px solid red;
         .wrapper{
             display: flex;
             height: 100%;
             width: 100%;
             align-items: center;
             justify-content: space-between;
-            border: 1px solid black;
+            // border: 1px solid black;
             .logo{
                 display: flex;
                 align-items: center;
@@ -102,7 +97,7 @@
                 // height: 74px;
                 // width: 36px;
                 // padding: 16px;
-                border: 1px solid black;
+                // border: 1px solid black;
             }
             .topRight{
                 display: flex;
@@ -111,21 +106,25 @@
                 height: 100%;
                 // padding: 14px;
                 // width: auto;
-                border: 1px solid rgb(22, 238, 58);
+                // border: 1px solid rgb(22, 238, 58);
                 .menu{
                     list-style-type: none;
-                    display: block;
+                    display: flex;
+                    flex-wrap: nowrap;
                     margin: 0;
                     padding: 0;
-                    border: 1px solid yellow;
+                    // border: 1px solid yellow;
                     
                     .menuItems{
-                        display: block;
+                        display: flex;
+                        
                         @include mobile-heading-3;
+                        height: 66px;
+                        align-items: center;
                         float: left;
                         text-align: center;
                         margin: 0px 24px 18px;
-                        border: 1px solid red;
+                        // border: 1px solid red;
                         &:hover {
                             background-color: $Orange_40;
                           }

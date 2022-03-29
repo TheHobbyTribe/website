@@ -4,6 +4,7 @@ import IdeaLamp from '../../public/images/Icons/idealamp.svg'
 import GreenBlocks from '../../public/images/Icons/greenblocks.svg'
 import BlueGradHat from '../../public/images/Icons/bluegradhat.svg'
 import { SolidButton } from '../index'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg'
 
 const Why = () => {
   return (
@@ -26,7 +27,8 @@ const Why = () => {
                         Learn Anything
                     </div>
                     <div className={styles.blockPara}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque maecenas sagittis.
+                        {/* //put p tag wherever paragraph is there. Confirm once. */}
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque maecenas sagittis.
                     </div>
                 </div>
             
@@ -38,7 +40,7 @@ const Why = () => {
                         Learn Together
                     </div>
                     <div className={styles.blockPara}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque maecenas sagittis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque maecenas sagittis.
                     </div>
                 </div>
             
@@ -50,13 +52,13 @@ const Why = () => {
                         Learn from experts
                     </div>
                     <div className={styles.blockPara}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque maecenas sagittis.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque maecenas sagittis.
                     </div>
                 </div>
             </div>
 
             <div className={styles.button}>
-            <SolidButton text="Join The Tribe &#10142;" />
+                <SolidButton text="Join the tribe" icon={<ArrowRight />} />
             </div>
 
         </div>
