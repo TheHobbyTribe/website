@@ -13,6 +13,7 @@ export {default as WhiteButton} from './common/buttons/WhiteButton'
 export {default as CategoryCard} from './common/cards/CategoryCard'
 export {default as HobbyCard} from './common/cards/HobbyCard'
 export {default as CoursesCard} from './common/cards/CoursesCard' 
+export {default as TeamMemberCard} from './common/cards/TeamMemberCard'
 
 // Footer
 export {default as Footer} from './common/footer/Footer'
@@ -30,3 +31,9 @@ export {default as Tribe} from './homepage/Tribe'
 export {default as UniqueHobbies} from './homepage/UniqueHobbies'
 export {default as JoinTheTribe} from './homepage/JoinTheTribe'
 export {default as Testimonial} from './homepage/Testimonial'
+
+// ----------------------------------------------------------------------------- About Us Components ------------------------------------------------------------------------------->
+export {default as Welcome} from './about/Welcome'
+export {default as HowItBegan} from './about/HowItBegan'
+export {default as MeetTheTeam} from './about/MeetTheTeam'
+export {default as TeamRecommends} from './about/TeamRecommends'

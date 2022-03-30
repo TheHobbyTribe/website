@@ -126,7 +126,7 @@
             .heading {
                 grid-area: heading;
                 display: flex;
-                @include mobile-heading-2();
+                @include desktop-heading-2();
                 @include center();
                 color: $Black;
                 .subheading2 {

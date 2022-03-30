@@ -14,7 +14,7 @@ const Tribe = () => {
     <div className={styles.container}>
         <div className={styles.wrapper}>
             <div className={styles.imageContainer}>
-                <img className={styles.image} src={handsImage.src} alt="yo" />
+                <img className={styles.image} src={handsImage.src} alt="Hands in the shape of Love" />
             </div>
             <div className={styles.heading}>
                 <div className={styles.subheading1}>
