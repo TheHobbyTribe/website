@@ -37,13 +37,13 @@
             flex-direction: column;
             // width: 100%;
             margin: 0px 29px;
-        
+            // border: 1px solid black;
             .block{
                 @include center();
                 display: flex;
                 flex-direction: column;
                 margin: 32px 0px;
-            
+                // border: 1px solid black;
                 .blockTitle{
                     @include mobile-heading-3();
                     // display: flex;
@@ -107,14 +107,14 @@
                 display: flex;
                 flex-direction: row;
                 @include center();
-                margin: 0px 56px;
+                margin: 0px;
             
                 .block{
                     @include center();
                     display: flex;
                     flex-direction: column;
                     
-                    margin: 32px 5px;
+                    margin: 32px 0px;
                     .blockImage{
                         height: 128px;
                     }
@@ -124,6 +124,7 @@
                         color: $Black;
                     }
                     .blockPara{
+                        padding: 5px;
                         // width: 317px;
                         color: $NeutralGrey_110;
                         @include desktop-body-2();

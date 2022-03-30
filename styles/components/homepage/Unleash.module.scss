@@ -19,12 +19,39 @@
                              'image';
         .heading {
             grid-area: heading;
-            // display: flex;
+            display: flex;
+            flex-direction: column;
+            // display: grid;
+            // grid-template-areas: 'subheading1 subheading2'
+            //                       'subheading3 subheading3';
             width: 100%;
-            flex-direction: row;
+            // flex-direction: row;
             @include mobile-heading-1();
             @include center();
             color: $Black;
+            .headingTop{
+                display: flex;
+
+                border: 1px solid black;
+                .subheading2 {
+                    grid-area: subheading2;
+                    border: 1px solid black;
+                    padding-top: 5px;
+                    h3 {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+                // .subheading3{
+                //     padding-top: 5px;
+                //     h3{
+                //         display: flex;
+
+                //     }
+                // }
+                // }
             // margin: 48px 16px 32px;
             // .subheading1{
             //     h3{
@@ -42,29 +69,26 @@
         }
         
         .featuresGrid{
-            grid-area: featuresGrid;
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            // grid-auto-flow: dense;
-            justify-content: center;
-            max-width: 550px;
-            grid-gap: 10px;
-            padding: 10px;
-            
-            border: 1px solid black;
-        
+            display: flex;
+            flex-wrap: wrap;
+
+            border: 1px solid brown;
+
+            // .featuresGrid > feature{
+            //     flex: 50%;
+            // }
             .feature{
                 display: flex;
-                @include center();
+                flex: 50%;
+                // @include center();
                 min-width: 149px;
-                height: 48px;
+                // height: 48px;
                 border: 1px solid black;
                 .featureIcon{
-                    @include center();
+                    // @include center();
                     // min-width: 48px;
                     // min-height: 48px;
-                    border: 1px solid black;
+                    border: 1px solid yellow;
                 }
                 .featureTextBox{
                     display: flex;
@@ -72,7 +96,7 @@
                     justify-content: center;
                     padding-left: 8px;
                     // @include center();
-                    border: 1px solid black;
+                    border: 1px solid red;
                 
                     .featureTextOne{
                         @include mobile-label-2();
@@ -86,6 +110,55 @@
                 }
             }
         }
+
+        // .featuresGrid{
+        //     grid-area: featuresGrid;
+        //     display: grid;
+        //     // grid-template-columns: repeat(auto-fill, minmax(149px, 1fr));
+        //     grid-template-columns: repeat(2, 1fr);
+        //     grid-template-rows: repeat(2, 1fr);
+        //     // grid-template-columns: auto auto;
+        //     // grid-template-rows: auto auto;
+        //     // grid-auto-flow: dense;
+        //     justify-content: center;
+        //     max-width: 550px;
+        //     grid-gap: 10px;
+        //     padding: 10px;
+            
+        //     border: 1px solid brown;
+        
+            // .feature{
+            //     display: flex;
+            //     @include center();
+            //     min-width: 149px;
+            //     // height: 48px;
+            //     border: 1px solid black;
+            //     .featureIcon{
+            //         // @include center();
+            //         // min-width: 48px;
+            //         // min-height: 48px;
+            //         border: 1px solid yellow;
+            //     }
+            //     .featureTextBox{
+            //         display: flex;
+            //         flex-direction: column;
+            //         justify-content: center;
+            //         padding-left: 8px;
+            //         // @include center();
+            //         border: 1px solid red;
+                
+            //         .featureTextOne{
+            //             @include mobile-label-2();
+            //             border: 0.2px solid blue;
+            //         }
+            //         .featureTextTwo{
+            //             @include mobile-helper();
+            //             color: $NeutralGrey_110;
+            //             border: 0.2px solid blue;
+            //         }
+            //     }
+            // }
+        // }
             
         .imageContainer {
             grid-area: image;
@@ -110,15 +183,19 @@
             // width: 100%;
             // max-width: 200px;
             // margin: 40px 16px 16px;
+            border: 1px solid black;
         }
         .exploreCoursesText{
             grid-area: exploreCoursesText;
             width: 100%;
+            max-width: 198px;
+            max-height: 52px;
             // background-color: $White;
             // max-width: 200px;
             // margin: 0px 25px;
             @include mobile-button-large;
             color: $Black;
+            border: 1px solid black;
         }
 
 }

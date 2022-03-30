@@ -19,19 +19,21 @@ const Unleash = () => {
         <div className={styles.wrapper}>
             
             <div className={styles.heading}>
-                {/* <div className={styles.subheading1}>
-                    <h3>Unleash your</h3>
+                <div className={styles.headingTop}>
+                    <div className={styles.subheading1}>
+                        <h3>Unleash your &nbsp;</h3>
+                    </div>
+                    <div className={styles.subheading2}>
+                        <h3> inner child <OrangeLine /></h3>
+                    </div>
                 </div>
-                <div className={styles.subheading2}>
-                    <h3> inner child <OrangeLine /></h3>
-                </div>
-                <div className={styles.subheading1}>
+                <div className={styles.headingBottom}>
                     <h3>with online hobby classes</h3>
-                </div> */}
+                </div>
 
-                Unleash your 
+                {/* Unleash your  */}
                 {/* <span>inner child <span><OrangeLine/></span> </span>  */}
-                with online hobby classes
+                {/* with online hobby classes */}
 
             </div>
 

@@ -15,6 +15,7 @@ const categoryArray = [
         id: 1,
         title: 'Arts & Craft',
         // backgroundColor: $Orange_40,
+        //Put the hex code here, and then use inline styles to add color
         icon: <ArtsCrafts/>
     },
     {
