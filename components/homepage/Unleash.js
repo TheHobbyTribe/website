@@ -30,11 +30,6 @@ const Unleash = () => {
                 <div className={styles.headingBottom}>
                     <h3>with online hobby classes</h3>
                 </div>
-
-                {/* Unleash your  */}
-                {/* <span>inner child <span><OrangeLine/></span> </span>  */}
-                {/* with online hobby classes */}
-
             </div>
 
             <div className={styles.featuresGrid}>
@@ -90,59 +85,6 @@ const Unleash = () => {
                         </div>
                     </div>
                 </div>    
-
-                {/* <div className={styles.feature1}>
-                    <div className={styles.feature1Icon}>
-                        <BoyIcon/>
-                    </div>
-                    <div className={styles.feature1TextBox}>
-                        <div className={styles.feature1TextOne}>
-                            1K+
-                        </div>
-                        <div className={styles.feature1TextTwo}>
-                            students taught
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.feature2}>
-                    <div className={styles.feature2Icon}>
-                        <VidCam/>
-                    </div>
-                    <div className={styles.feature2TextBox}>
-                        <div className={styles.feature2TextOne}>
-                            45+
-                        </div>
-                        <div className={styles.feature2TextTwo}>
-                            courses available
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.feature3}>
-                    <div className={styles.feature3Icon}>
-                        <SandClock/>
-                    </div>
-                    <div className={styles.feature3TextBox}>
-                        <div className={styles.feature3TextOne}>
-                            12.5K+
-                        </div>
-                        <div className={styles.feature3TextTwo}>
-                            hours taught
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.feature4}>
-                    <div className={styles.feature4Icon}>
-                        <LocationPin/>
-                    </div>
-                    <div className={styles.feature4TextBox}>
-                        <div className={styles.feature4TextOne}>
-                            10+
-                        </div>
-                        <div className={styles.feature4TextTwo}>
-                            countries present
-                        </div>
-                    </div>
-                </div>                 */}
             </div>
 
             <div className={styles.button}>
