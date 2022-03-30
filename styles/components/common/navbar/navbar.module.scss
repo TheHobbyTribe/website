@@ -45,7 +45,7 @@
             // justify-content: space-between;
             // justify-content: center;
             // justify-content: flex-end;
-            // border: 1px solid green;
+            border: 1px solid green;
             .menu{
                 list-style-type: none;
                 display: none;
@@ -64,13 +64,13 @@
                 // height: 40px;
                 // padding: 0px;
                 margin-right: 10px;  
-                // border: 1px solid black;
+                border: 1px solid black;
             }
             .menuLogo{
                 // display:block;
                 margin: 20px 16px;
 
-                // border: 1px solid yellow;
+                border: 1px solid yellow;
             }
         }
     }
@@ -108,7 +108,7 @@
                         // margin: 0px 24px 18px;
                         margin: 18px;
                         padding: 5px;
-                        // border: 1px solid red;
+                        border: 1px solid red;
                         &:hover {
                             background-color: $Orange_40;
                         }

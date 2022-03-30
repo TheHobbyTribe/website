@@ -5,16 +5,14 @@ import styles from '../../../styles/components/common/cards/CategoryCard.module.
 const CategoryCard = ({category}) => {
     // console.log(category)
   return (
-    <div className={styles.container}>
-      <div className={styles.wrapper}>
-        {/* //Add a style tag for the backgroundColor here */}
-        <div className={styles.heading}>
-          {category.title}
-        </div>
-        <div className={styles.image}>
-          {category.icon}
-        </div>
-
+      <div className={styles.container} style={{backgroundColor: `${category.backgroundColor}`}}>
+        <div className={styles.wrapper}>
+          <div className={styles.heading} style={{color: `${category.fontColor}`}}>
+            {category.title}
+          </div>
+          <div className={styles.image}>
+            {category.icon}
+          </div>
       </div>
     </div>
   )

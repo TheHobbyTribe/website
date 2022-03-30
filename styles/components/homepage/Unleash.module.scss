@@ -21,6 +21,7 @@
             grid-area: heading;
             display: flex;
             flex-direction: column;
+            flex-wrap: nowrap;
             // display: grid;
             // grid-template-areas: 'subheading1 subheading2'
             //                       'subheading3 subheading3';
@@ -31,18 +32,33 @@
             color: $Black;
             .headingTop{
                 display: flex;
-
+                align-items: center;
                 border: 1px solid black;
                 .subheading2 {
                     grid-area: subheading2;
-                    border: 1px solid black;
+                    position: relative;
+                    flex-wrap: nowrap;
+                    border: 1px solid red;
+                    // height: inherit;
                     padding-top: 5px;
+                    margin-bottom: 5px;
                     h3 {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        border: 1px solid blue;
+                    }
+                    .threeLines{
+                        // position: absolute;
+                        align-self: flex-end;
+                        margin: -15px;
+                        // float: left;
+                        border: 1px solid black;
                     }
                 }
+            }
+            .headingBottom{
+                margin-top: -75px;
             }
                 // .subheading3{
                 //     padding-top: 5px;
@@ -80,12 +96,12 @@
             .feature{
                 display: flex;
                 flex: 50%;
-                // @include center();
-                min-width: 149px;
+                @include center();
+                min-width: 0px;
                 // height: 48px;
                 border: 1px solid black;
                 .featureIcon{
-                    // @include center();
+                    @include center();
                     // min-width: 48px;
                     // min-height: 48px;
                     border: 1px solid yellow;
@@ -94,7 +110,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    padding-left: 8px;
+                    // padding-left: 8px;
                     // @include center();
                     border: 1px solid red;
                 
@@ -172,7 +188,7 @@
                 width: 100%;
                 height: 100%;
                 display: block;
-                object-fit: contain;
+                // object-fit: contain;
             }
         }
     }
@@ -235,42 +251,43 @@
                 }
             }
 
-            .featuresGrid{
-                grid-area: featuresGrid;
-                display: grid;
-                // grid-template-columns: auto auto;
-                grid-template-rows: auto auto;
-                grid-gap: 10px;
-                padding: 10px;
-                justify-content: center;
-                // border: 1px solid black;
-                .featureTemplate{
-                    display: flex;
-                    @include center();
-                    // border: 1px solid black;
-                    .featureIconTemplate{
-                        @include center();
-                        min-width: 88px;
-                        min-height: 88px;
-                        // border: 1px solid black;
-                    }
-                    .featureTextBoxTemplate{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        // @include center();
-                        // border: 1px solid black;
+            // .featuresGrid{
+            //     grid-area: featuresGrid;
+            //     display: grid;
+            //     grid-template-columns: auto auto;
+            //     grid-template-rows: auto auto;
+            //     grid-gap: 10px;
+            //     padding: 10px;
+            //     justify-content: center;
+            //     // border: 1px solid black;
+            //     .featureTemplate{
+            //         display: flex;
+            //         @include center();
+            //         // border: 1px solid black;
+            //         .featureIconTemplate{
+            //             @include center();
+            //             min-width: 88px;
+            //             min-height: 88px;
+            //             // border: 1px solid black;
+            //         }
+            //         .featureTextBoxTemplate{
+            //             display: flex;
+            //             flex-direction: column;
+            //             justify-content: center;
+            //             // @include center();
+            //             // border: 1px solid black;
                         
-                        .featureTextOneTemplate{
-                            @include desktop-label-2();
-                            // border: 0.2px solid blue;
-                        }
-                        .featureTextTwoTemplate{
-                            @include desktop-helper();
-                            // border: 0.2px solid blue;
-                        }
-                    }
-                }
+            //             .featureTextOneTemplate{
+            //                 @include desktop-label-2();
+            //                 // border: 0.2px solid blue;
+            //             }
+            //             .featureTextTwoTemplate{
+            //                 @include desktop-helper();
+            //                 // border: 0.2px solid blue;
+            //             }
+            //         }
+            //     }
+            // }
             .imageContainer {
                 // border: 1px solid black;
                 grid-area: image;
@@ -304,7 +321,5 @@
                 color: $Black;
             }
         }
-        }
-        
     }
 }

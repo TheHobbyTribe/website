@@ -24,7 +24,7 @@ const Unleash = () => {
                         <h3>Unleash your &nbsp;</h3>
                     </div>
                     <div className={styles.subheading2}>
-                        <h3> inner child <OrangeLine /></h3>
+                        <h3> <span className={styles.threeLines}><OrangeThreeShortLines/></span> inner child <OrangeLine /></h3>
                     </div>
                 </div>
                 <div className={styles.headingBottom}>

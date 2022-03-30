@@ -14,38 +14,43 @@ const categoryArray = [
     {
         id: 1,
         title: 'Arts & Craft',
-        // backgroundColor: $Orange_40,
-        //Put the hex code here, and then use inline styles to add color
+        backgroundColor: '#FFDAD4', // $Orange_40
+        fontColor: '#BD502D', // $Orange_100
         icon: <ArtsCrafts/>
     },
     {
         id: 2,
         title: 'Music & Dance',
-        // backgroundColor: $Blue_40,
+        backgroundColor: '#D3F7FF', // $Blue_40
+        fontColor: '#0374A5', // $Blue_100
         icon: <MusicDance/>
     },
     {
         id: 3,
         title: 'Mind Games',
-        // backgroundColor: $Green_40,
+        backgroundColor: '#D0FFEE', // $Green_40
+        fontColor: '#28845D', // $Green_100
         icon: <MindGames/>
     },
     {
         id: 4,
         title: 'Creative Writing',
-        // backgroundColor: $Purple_40,
+        backgroundColor: '#ECD9FF', // $Purple_40
+        fontColor: '#761ECE', // $Purple_100
         icon: <CreativeWriting/>
     },
     {
         id: 5,
         title: 'Languages',
-        // backgroundColor: $Pink_40,
+        backgroundColor: '#FFDAF5', // $Pink_40
+        fontColor: '#690058', // $Pink_100
         icon: <Languages/>
     },
     {
         id: 6,
         title: 'Photography',
-        // backgroundColor: $Yellow_40,
+        backgroundColor: '#FDFED8', // $Yellow_40
+        fontColor: '#583500', // $Yellow_100
         icon: <Photography/>
     },
     

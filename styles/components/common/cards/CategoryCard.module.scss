@@ -3,9 +3,13 @@
 @import '../../../helper';
 
 .container{
+    width: 164px;
+    height: 88px;
+    border-radius: 4px;
     .wrapper{
        display: grid;
        width: auto;
+       padding: 8px;
         // display: flex;
         // flex-direction: row;
         // flex-wrap: wrap;
@@ -35,6 +39,8 @@
 
 @media screen and (min-width: 769px) {
     .container{
+        width: 201px;
+        height:112px;
         .wrapper{
             .heading{
                 @include desktop-heading-4();
