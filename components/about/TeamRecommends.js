@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../../styles/components/about/TeamRecommends.module.scss'
+import slickStyles from '../../styles/slick/slick.module.scss'
 import abacus from '../../public/images/hobbies/abacus.png'
 import bookreading from '../../public/images/hobbies/bookreading.png'
 import painting from '../../public/images/hobbies/painting.png'
@@ -42,10 +43,11 @@ const hobbyArray = [
 ]
 
 const TeamRecommends = () => {
-    var settings = {
+    const settings = {
         dots: true,
         infinite: false,
         speed: 500,
+        dotsClass: `${slickStyles.dots}`,
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
