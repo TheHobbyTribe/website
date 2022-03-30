@@ -9,12 +9,12 @@ const HobbyCard = ({hobby}) => {
   return (
     <div className={styles.card} key={hobby.hobby}>
         <div className={styles.image}>
-            <Image 
-            src={hobby.image.src} 
-            alt='Hobby' 
+            <Image
+            src={hobby.image.src}
+            alt='Hobby'
             layout="responsive"
             width={hobby.image.width}
-            height={hobby.image.height} 
+            height={hobby.image.height}
             />
         </div>
         <div className={styles.details}>
@@ -24,7 +24,7 @@ const HobbyCard = ({hobby}) => {
                     <CalendarIcon className={styles.icon}/>
                     {hobby.time}
                 </div>
-                
+
                 <div className={styles.items}>
                     <UserIcon className={styles.icon}/>
                     {hobby.age}
@@ -38,4 +38,4 @@ const HobbyCard = ({hobby}) => {
   )
 }
 
-export default HobbyCard 
+export default HobbyCard

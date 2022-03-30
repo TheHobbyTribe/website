@@ -1,12 +1,12 @@
 import React from 'react'
-import styles from '../../../styles/components/common/footer/Footer.module.scss'
-import logo from '../../../public/images/logo/logo.png'
-import {SolidButton} from '../../index'
-import Telephone from '../../../public/images/icons/telephone.svg'
-import Email from '../../../public/images/icons/email.svg'
-import Facebook from '../../../public/images/icons/facebook.svg'
-import Instagram from '../../../public/images/icons/instagram.svg'
-import Twitter from '../../../public/images/icons/twitter.svg'
+import styles from '/styles/components/common/footer/Footer.module.scss'
+import logo from '/public/images/logo/logo.png'
+import {SolidButton} from '/components'
+import Telephone from '/public/images/icons/telephone.svg'
+import Email from '/public/images/icons/email.svg'
+import Facebook from '/public/images/icons/facebook.svg'
+import Instagram from '/public/images/icons/instagram.svg'
+import Twitter from '/public/images/icons/twitter.svg'
 // import Link from 'next/link'
 
 const Footer = () => {
@@ -25,17 +25,17 @@ const Footer = () => {
                 <p>Get access to exclusive updates</p>
             </div>
             <div className={styles.formContainer}>
-                <input 
-                    className={styles.form} 
-                    type="text" 
+                <input
+                    className={styles.form}
+                    type="text"
                     placeholder='Enter your email'
                 />
                 <div className={styles.button}>
-                    <SolidButton  
-                    text="Subscribe" 
+                    <SolidButton
+                    text="Subscribe"
                     />
                 </div>
-                
+
             </div>
             <div className={styles.hyperlinks}>
                 <a href="#">Find a hobby</a>

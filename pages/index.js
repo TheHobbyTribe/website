@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
 	Navbar,
 	Unleash,
@@ -12,18 +12,20 @@ import {
 	PopularCourses,
 	Tribe,
 	Footer,
-} from '../components/index';
+} from '/components'
+import { useQuery } from 'react-query'
+
 
 const Home = () => {
 
-    const fetchCharacters = async () => {
-        const response = await fetch('https://rickandmortyapi.com/api/character')
-        return response.json()
-    }
-    const { data, status } = useQuery('characters', fetchCharacters)
+    // const fetchCharacters = async () => {
+    //     const response = await fetch('https://rickandmortyapi.com/api/character')
+    //     return response.json()
+    // }
+    // const { data, status } = useQuery('characters', fetchCharacters)
 
-    console.log('===> data', data)
-    console.log('===> status', status)
+    // console.log('===> data', data)
+    // console.log('===> status', status)
 
 	return (
 		<div>
@@ -40,7 +42,7 @@ const Home = () => {
 			<Tribe />
 			<Footer />
 		</div>
-	);
-};
+	)
+}
 
-export default Home;
+export default Home

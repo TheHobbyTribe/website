@@ -1,11 +1,11 @@
-import React from 'react';
-import styles from '../../styles/components/homepage/JoinTheTribe.module.scss';
-import buy from '../../public/images/misc/buy99-purple.png';
-import getinvited from '../../public/images/misc/getinvited-blue.png';
-import Image from 'next/image';
-import { SolidButton } from '..';
-import GreenLine from '../../public/images/misc/greenLine.svg';
-import ArrowRight from '../../public/images/icons/white-arrow-right.svg';
+import React from 'react'
+import styles from '/styles/components/homepage/JoinTheTribe.module.scss'
+import buy from '/public/images/misc/buy99-purple.png'
+import getinvited from '/public/images/misc/getinvited-blue.png'
+import Image from 'next/image'
+import { SolidButton } from '/components'
+import GreenLine from '/public/images/misc/greenLine.svg'
+import ArrowRight from '/public/images/icons/white-arrow-right.svg'
 
 const JoinTheTribe = () => {
 	return (
@@ -77,7 +77,7 @@ const JoinTheTribe = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default JoinTheTribe;
+export default JoinTheTribe
