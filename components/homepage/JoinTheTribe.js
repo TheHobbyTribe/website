@@ -5,13 +5,9 @@ import getinvited from '../../public/images/misc/getinvited-blue.png';
 import Image from 'next/image';
 import { SolidButton } from '..';
 import GreenLine from '../../public/images/misc/greenLine.svg';
-import { useQuery } from 'react-query'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg';
 
 const JoinTheTribe = () => {
-	const { data, status } = useQuery('characters');
-
-	console.log('===> JoinTheTribe data', data);
-	console.log('===> JoinTheTribe status', status);
 	return (
 		<div className={styles.container}>
 			<div className={styles.wrapper}>
@@ -77,7 +73,7 @@ const JoinTheTribe = () => {
 					</div>
 				</div>
 				<div className={styles.button}>
-					<SolidButton text="Join the tribe &#10142;" />
+					<SolidButton text="Join the tribe" icon={<ArrowRight />} />
 				</div>
 			</div>
 		</div>

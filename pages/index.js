@@ -1,18 +1,20 @@
-import React from 'react'
+import React from 'react';
 import {
+	Navbar,
+	Unleash,
+	Why,
+	ExploreCategories,
+	JoinTheTribe,
+	Testimonial,
 	UniqueHobbies,
 	Quiz,
 	GlobalInSpirit,
 	PopularCourses,
 	Tribe,
 	Footer,
-	JoinTheTribe,
-} from '/components'
-import { useQuery } from 'react-query'
-
+} from '../components/index';
 
 const Home = () => {
-
 
     const fetchCharacters = async () => {
         const response = await fetch('https://rickandmortyapi.com/api/character')
@@ -25,6 +27,11 @@ const Home = () => {
 
 	return (
 		<div>
+			<Navbar />
+			<Unleash />
+			<Why />
+			<ExploreCategories />
+			<Testimonial />
 			<JoinTheTribe />
 			<UniqueHobbies />
 			<Quiz />
@@ -33,7 +40,7 @@ const Home = () => {
 			<Tribe />
 			<Footer />
 		</div>
-	)
-}
+	);
+};
 
-export default Home
+export default Home;

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import PurpleLine from '../../public/images/misc/purpleLine.svg'
 import TwistedLine from '../../public/images/icons/twistedline.svg'
 import Envelope from '../../public/images/icons/envelope.svg'
+import ArrowRight from '../../public/images/icons/white-arrow-right.svg'
 import { SolidButton } from '../index'
 
 
@@ -13,7 +14,7 @@ const Tribe = () => {
     <div className={styles.container}>
         <div className={styles.wrapper}>
             <div className={styles.imageContainer}>
-                <img className={styles.image} src={handsImage.src} alt="yo" />
+                <img className={styles.image} src={handsImage.src} alt="Hands in the shape of Love" />
             </div>
             <div className={styles.heading}>
                 <div className={styles.subheading1}>
@@ -51,7 +52,7 @@ const Tribe = () => {
                 </div>
             </div>
             <div className={styles.button}>
-                <SolidButton text="Join The Tribe &#10142;" />
+                <SolidButton text="Join The Tribe" icon={<ArrowRight />} />
             </div>    
         </div>
     </div>

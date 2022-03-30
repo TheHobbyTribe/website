@@ -3,6 +3,7 @@ import styles from '../../styles/components/homepage/Quiz.module.scss'
 import ThinkingWoman from '../../public/images/faces/ThinkingWoman.png'
 import Image from 'next/image'
 import { WhiteButton } from '../index'
+import ArrowRight from '../../public/images/icons/black-arrow-right.svg'
 
 const Quiz = () => {
   return (
@@ -21,7 +22,7 @@ const Quiz = () => {
                     </p>
                 </div>
                 <div className={styles.button}>
-                    <WhiteButton text="Take the quiz &#10142;" />
+                    <WhiteButton text="Take the quiz" icon={<ArrowRight />} />
                 </div>
             </div>
             

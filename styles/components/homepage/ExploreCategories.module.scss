@@ -1,0 +1,125 @@
+@import "../../fonts";
+@import "../../helper";
+@import "../../colors";
+
+
+.container {
+    display: flex;
+    // justify-content: center;
+    // align-content: center;
+    height: 100%;
+    width: 100%;
+    .wrapper{
+        width: 100%;     
+        display: grid;
+        grid-template-areas: 'imageContainer'
+                             'heading'
+                             'paragraph'
+                             'content'
+                             'OutlinedButton';
+        .imageContainer {
+            grid-area: imageContainer;
+            display: flex;
+            // justify-content: flex-end;
+            width: 100% !important;
+            height: 100% !important;
+            .image {
+                // border: 1px solid black;
+                width: 100%;
+                height: 100%;
+                display: block;
+                object-fit: contain;
+            }
+        }
+        .heading{
+            @include mobile-heading-2();
+            @include center();
+            color: $Black;
+            h4{
+                margin: 0;
+            }
+        }
+        .paragraph{
+            @include mobile-body-1();
+            color: $NeutralGrey_100;
+            text-align: center;
+            margin: 16px;
+        }
+        .content{
+            display: grid;
+            align-self: center;
+            justify-self: center;
+            justify-items: center;
+            align-items: center;
+            grid-template-columns: auto auto;
+            // grid-template-rows: auto auto auto;
+            gap: 16px; 
+            // column-gap: 16px;
+            // row-gap: 16px;
+            // border: 1px solid black;
+            .contentContainer{
+                flex: 0 0 auto;
+                // width: 164px;
+                // height: 88px;
+                // padding: 8px;
+                // border: 1px solid black;
+            }
+        }
+        .outlinedButton {
+            grid-area: OutlinedButton;
+            @include center();
+            margin: 30px 16px;
+        }
+        
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        justify-content: center;
+        .wrapper{
+            width: 100%;
+            margin: 56px;
+            // padding: 0 10%;
+            .imageContainer{
+                display: none;
+            }
+                .image{
+                    display: none;
+                }
+            .heading{
+                @include desktop-heading-2();
+            }
+            .paragraph{
+                @include desktop-body-1();
+            }
+            .content{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                align-self: center;
+                justify-self: center;
+                justify-items: center;
+
+                justify-content: center;
+                align-items: center;
+                
+                // border: 1px solid black;
+                .contentContainer{
+                    // flex: 0 0 auto;
+                    align-items: center;
+                    justify-items: center;
+                    // width: 201px;
+                    // height:112px;
+                    // padding: 8px;
+                    // border: 1px solid black;
+                }
+            }
+            .outlinedButton {
+                grid-area: OutlinedButton;
+                @include center();
+                margin-top: 30px;
+            }
+        }
+    }
+}

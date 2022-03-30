@@ -1,0 +1,122 @@
+@import "../../../fonts";
+@import "../../../helper";
+@import "../../../colors";
+
+.container{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+    // height: 68px;
+    background-color: $White;
+    border-bottom: 2px solid #EDEEF1;
+    // border: 1px solid black;
+
+    .wrapper{
+        display: flex;
+        // flex-wrap: nowrap;
+        // height: 100%;
+        // align-items: center;
+        justify-content: space-between;
+        // border: 1px solid brown;
+        .navbarLeft{
+            display: flex;
+            align-items: flex-start;
+            // height: 100%;
+            // min-width: 50%;
+            // border: 1px solid pink;
+            .logo{
+                display: block;
+                align-items: center;
+                cursor: pointer;
+                // height: 36px;
+                // width: 74px;
+                margin: 16px;
+                // border: 1px solid black;
+
+            }
+        }
+        .navbarRight{
+            display: flex;
+            max-height: 100%;
+            align-items: center;
+            // border: 1px solid green;
+            .menu{
+                list-style-type: none;
+                display: none;
+                .menuItems{
+                    align-items: center;
+                    @include mobile-heading-3();
+                    display: none;
+                    // &:hover {
+                    //     background-color: $Orange_40;
+                    //     }
+                }           
+            }
+            .buttonContainer{
+                max-width: 100%;
+                width: 68px;
+                max-height: 100%;
+                margin-right: 10px;
+                padding-top: 5px;  
+                // border: 1px solid black;
+            }
+            .menuLogo{
+                margin: 20px 16px;
+                padding-top: 5px;
+                // border: 1px solid yellow;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        .wrapper{
+            max-height: 84px;
+            .navbarLeft{
+                .logo{
+                    margin: 16px 16px 16px 56px;
+                    // max-width: 107px;
+                    // max-height: 52px;
+                }
+            }
+            .navbarRight{
+                height: 100%;
+                align-items: center;
+                .menu{
+                    list-style-type: none;
+                    display: flex;
+                    // border: 1px solid lime;
+                    .menuItems{
+                        display: block;
+                        align-self: stretch;
+                        height: 100%;
+                        padding-top: 26px;
+                        @include mobile-heading-3();
+                        // min-width: 149px;
+                        text-align: center;
+                        margin: 0px 24px 18px;
+                        color: $NeutralGrey_110;
+                        // border: 1px solid red;
+                        &:hover {
+                            background-color: $Orange_40;
+                            color: $Black;
+                        }
+                    }
+                }
+                .buttonContainer{
+                    max-width: 100%;
+                    width: 86px;
+                    // height: 44px;
+                    // justify-self: center;
+                }
+                .menuLogo{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
