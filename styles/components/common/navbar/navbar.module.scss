@@ -86,7 +86,7 @@
                 .menu{
                     list-style-type: none;
                     display: flex;
-                    border: 1px solid lime;
+                    // border: 1px solid lime;
                     .menuItems{
                         display: block;
                         align-self: stretch;
@@ -97,7 +97,7 @@
                         text-align: center;
                         margin: 0px 24px 18px;
                         color: $NeutralGrey_110;
-                        border: 1px solid red;
+                        // border: 1px solid red;
                         &:hover {
                             background-color: $Orange_40;
                             color: $Black;
