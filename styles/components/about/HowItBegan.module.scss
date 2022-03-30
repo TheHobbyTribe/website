@@ -3,7 +3,6 @@
 @import "../../colors";
 
 .container{
-    // background-color: rgb(143, 138, 138);
     .wrapper{
         @include center();
         flex-direction: column;

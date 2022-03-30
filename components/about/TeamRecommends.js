@@ -78,24 +78,27 @@ const TeamRecommends = () => {
         appendDots: dots => (
             <div
               style={{
-                borderRadius: "10px",
+                borderRadius: "10px"
               }}
             >
-              <ul style={{ margin: "0px" }}> {dots} </ul>
+              <ul style={{ margin: "0px" }}> 
+                {dots} 
+              </ul>
             </div>
           ),
-        //   customPaging: i => (
-        //     <div
-        //       style={{
-        //         width: "10px",
-        //         height: "10px",
-        //         color: "blue",
-        //         border: "3px solid #2c2c2c",
-        //         borderRadius: "100%",
-        //         margin: "0px 5px"
-        //       }}
-        //     />
-        //   )
+          // customPaging: i => (
+          //   <div
+          //     style={{
+          //       backgroundColor: "#F97864",
+          //       width: "24px",
+          //       height: "8px",
+          //       color: "blue",
+          //       // border: "1px solid #2c2c2c",
+          //       borderRadius: "4px",
+          //       // margin: "0px 5px"
+          //     }}
+          //   />
+          // )
       };
 
   return (
