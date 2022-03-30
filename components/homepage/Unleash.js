@@ -148,7 +148,7 @@ const Unleash = () => {
             <div className={styles.button}>
                 <SolidButton text="Join the tribe" icon={<ArrowRight />} />
             </div>
-            <div className={styles.exploreCoursesText}>
+            <div className={styles.exploreCoursesButton}>
                 Explore Our Courses <DoubleDownArrow/>
             </div>
 
