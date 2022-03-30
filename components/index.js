@@ -21,7 +21,7 @@ export {default as Footer} from './common/footer/Footer'
 // ----------------------------------------------------------------------------- HomePage Components ---------------------------------------------------------------------------->
 
 export {default as Unleash} from './homepage/Unleash'
-export {default as Why} from './homepage/Why'
+export {default as Why} from './homepage/why'
 export {default as ExploreCategories} from './homepage/ExploreCategories'
 export {default as GlobalInSpirit} from './homepage/GlobalInSpirit'
 export {default as PopularCourses} from './homepage/PopularCourses'
