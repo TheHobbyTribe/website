@@ -86,19 +86,6 @@ const TeamRecommends = () => {
               </ul>
             </div>
           ),
-          // customPaging: i => (
-          //   <div
-          //     style={{
-          //       backgroundColor: "#F97864",
-          //       width: "24px",
-          //       height: "8px",
-          //       color: "blue",
-          //       // border: "1px solid #2c2c2c",
-          //       borderRadius: "4px",
-          //       // margin: "0px 5px"
-          //     }}
-          //   />
-          // )
       };
 
   return (
