@@ -1,6 +1,6 @@
 import React from 'react'
-import { Navbar, Footer, HowItBegan, MeetTheTeam, TeamRecommends, Tribe, UniqueHobbies, Welcome } from '../components'
-import styles from '../styles/pages/About.module.scss'
+import { Navbar, Footer, HowItBegan, MeetTheTeam, TeamRecommends, Tribe, UniqueHobbies, Welcome } from '/components'
+import styles from '/styles/pages/About.module.scss'
 
 const about = () => {
   return (
@@ -13,7 +13,6 @@ const about = () => {
       <div className={styles.disappear}>
         <Tribe />
       </div>
-      
       <Footer />
     </div>
   )
