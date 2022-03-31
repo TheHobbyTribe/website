@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '/styles/components/homepage/GlobalInSpirit.module.scss'
-import worldmap from '/public/images/misc/worldmap.png'
+import worldmap from '/public/images/misc/world-map.png'
 import Image from 'next/image'
 import { SolidButton } from '../index'
 import ArrowRight from '/public/images/icons/white-arrow-right.svg'

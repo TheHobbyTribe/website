@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '/styles/components/homepage/Quiz.module.scss'
-import ThinkingWoman from '/public/images/faces/ThinkingWoman.png'
+import ThinkingWoman from '/public/images/faces/thinking-woman.png'
 import Image from 'next/image'
 import { WhiteButton } from '/components'
 import ArrowRight from '/public/images/icons/black-arrow-right.svg'

@@ -3,8 +3,8 @@ import chess from '/public/images/hobbies/chess.png'
 import dance from '/public/images/hobbies/dance.png'
 import styles from '/styles/components/homepage/PopularCourses.module.scss'
 import { CoursesCard } from '/components'
-import ChessPlayers from '/public/images/icons/100chessplayers.svg'
-import Dancers from '/public/images/icons/100dancers.svg'
+import ChessPlayers from '/public/images/icons/100-chess-players.svg'
+import Dancers from '/public/images/icons/100-dancers.svg'
 
 const courseArray = [
 	{

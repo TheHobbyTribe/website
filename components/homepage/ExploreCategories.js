@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from '/styles/components/homepage/ExploreCategories.module.scss'
-import ArtsCrafts from '/public/images/icons/artscrafts.svg'
-import MusicDance from '/public/images/icons/musicdance.svg'
-import MindGames from '/public/images/icons/mindgames.svg'
-import CreativeWriting from '/public/images/icons/creativewriting.svg'
+import ArtsCrafts from '/public/images/icons/arts-crafts.svg'
+import MusicDance from '/public/images/icons/music-dance.svg'
+import MindGames from '/public/images/icons/mind-games.svg'
+import CreativeWriting from '/public/images/icons/creative-writing.svg'
 import Languages from '/public/images/icons/languages.svg'
 import Photography from '/public/images/icons/photography.svg'
-import PianoMan from '/public/images/faces/pianoman.png'
+import PianoMan from '/public/images/faces/piano-man.png'
 import { CategoryCard, OutlinedButton } from '/components'
 
 const categoryArray = [

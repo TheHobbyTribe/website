@@ -2,8 +2,8 @@ import React from 'react'
 import styles from '/styles/components/common/navbar/Navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import THT_Logo_SVG from '/public/images/logo/THT_Logo_SVG.svg'
-import Menu_logo from '/public/images/icons/menuright.svg'
+import THT_Logo_SVG from '/public/images/logo/tht-logo.svg'
+import Menu_logo from '/public/images/icons/menu-right.svg'
 import { OutlinedButton } from '/components'
 
 const Navbar = () => {

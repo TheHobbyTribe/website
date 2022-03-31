@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '/styles/components/about/MeetTheTeam.module.scss'
-import member from '/public/images/faces/teamMember.png'
+import member from '/public/images/faces/team-member.png'
 import { TeamMemberCard } from '/components'
 
 const team = [

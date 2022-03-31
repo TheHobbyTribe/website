@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from '/styles/components/homepage/JoinTheTribe.module.scss'
-import buy from '/public/images/misc/buy99-purple.png'
-import getinvited from '/public/images/misc/getinvited-blue.png'
+import buy from '/public/images/misc/buy-99-purple.png'
+import getinvited from '/public/images/misc/get-invited-blue.png'
 import Image from 'next/image'
 import { SolidButton } from '/components'
-import GreenLine from '/public/images/misc/greenLine.svg'
+import GreenLine from '/public/images/misc/green-line.svg'
 import ArrowRight from '/public/images/icons/white-arrow-right.svg'
 
 const JoinTheTribe = () => {

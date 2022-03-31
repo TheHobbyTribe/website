@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '/styles/components/homepage/Testimonial.module.scss'
-import People from '/public/images/faces/TestimonialFaces.png'
-import Face1 from '/public/images/faces/face1.png'
+import People from '/public/images/faces/testimonial-faces.png'
+import Face1 from '/public/images/faces/face-1.png'
 import Image from 'next/image'
 
 const Testimonial = () => {
