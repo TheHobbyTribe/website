@@ -2,37 +2,37 @@
 // ---------------------------------------------------------------------------- Common Components ---------------------------------------------------------------------------------->
 
 //Navbar
-export {default as Navbar} from './common/navbar/navbar'
+export {default as Navbar} from '/components/common/navbar/navbar'
 
 // Buttons
-export {default as SolidButton} from './common/buttons/SolidButton'
-export {default as OutlinedButton} from './common/buttons/OutlinedButton'
-export {default as WhiteButton} from './common/buttons/WhiteButton'
+export {default as SolidButton} from '/components/common/buttons/SolidButton'
+export {default as OutlinedButton} from '/components/common/buttons/OutlinedButton'
+export {default as WhiteButton} from '/components/common/buttons/WhiteButton'
 
 // Cards
-export {default as CategoryCard} from './common/cards/CategoryCard'
-export {default as HobbyCard} from './common/cards/HobbyCard'
-export {default as CoursesCard} from './common/cards/CoursesCard'
-export {default as TeamMemberCard} from './common/cards/TeamMemberCard'
+export {default as CategoryCard} from '/components/common/cards/CategoryCard'
+export {default as HobbyCard} from '/components/common/cards/HobbyCard'
+export {default as CoursesCard} from '/components/common/cards/CoursesCard'
+export {default as TeamMemberCard} from '/components/common/cards/TeamMemberCard'
 
 // Footer
-export {default as Footer} from './common/footer/Footer'
+export {default as Footer} from '/components/common/footer/Footer'
 
 // ----------------------------------------------------------------------------- HomePage Components ---------------------------------------------------------------------------->
 
-export {default as Unleash} from './homepage/Unleash'
-export {default as Why} from './homepage/why'
-export {default as ExploreCategories} from './homepage/ExploreCategories'
-export {default as GlobalInSpirit} from './homepage/GlobalInSpirit'
-export {default as PopularCourses} from './homepage/PopularCourses'
-export {default as Quiz} from './homepage/Quiz'
-export {default as Tribe} from './homepage/Tribe'
-export {default as UniqueHobbies} from './homepage/UniqueHobbies'
-export {default as JoinTheTribe} from './homepage/JoinTheTribe'
-export {default as Testimonial} from './homepage/Testimonial'
+export {default as Unleash} from '/components/homepage/Unleash'
+export {default as Why} from '/components/homepage/why'
+export {default as ExploreCategories} from '/components/homepage/ExploreCategories'
+export {default as GlobalInSpirit} from '/components/homepage/GlobalInSpirit'
+export {default as PopularCourses} from '/components/homepage/PopularCourses'
+export {default as Quiz} from '/components/homepage/Quiz'
+export {default as Tribe} from '/components/homepage/Tribe'
+export {default as UniqueHobbies} from '/components/homepage/UniqueHobbies'
+export {default as JoinTheTribe} from '/components/homepage/JoinTheTribe'
+export {default as Testimonial} from '/components/homepage/Testimonial'
 
 // ----------------------------------------------------------------------------- About Us Components ------------------------------------------------------------------------------->
-export {default as Welcome} from './about/Welcome'
-export {default as HowItBegan} from './about/HowItBegan'
-export {default as MeetTheTeam} from './about/MeetTheTeam'
-export {default as TeamRecommends} from './about/TeamRecommends'
+export {default as Welcome} from '/components/about/Welcome'
+export {default as HowItBegan} from '/components/about/HowItBegan'
+export {default as MeetTheTeam} from '/components/about/MeetTheTeam'
+export {default as TeamRecommends} from '/components/about/TeamRecommends'

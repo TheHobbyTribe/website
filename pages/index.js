@@ -15,7 +15,6 @@ import {
 } from '/components'
 import { useQuery } from 'react-query'
 
-
 const Home = () => {
 
     const fetchCharacters = async () => {

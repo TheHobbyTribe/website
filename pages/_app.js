@@ -1,6 +1,6 @@
-// import '../styles/reset.css'
-import '../styles/globals.css'
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import '/styles/reset.css'
+import '/styles/globals.css'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
 const queryClient = new QueryClient()
 

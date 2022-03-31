@@ -4,8 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import THT_Logo_SVG from '/public/images/logo/THT_Logo_SVG.svg'
 import Menu_logo from '/public/images/icons/menuright.svg'
-import { OutlinedButton } from '../../index'
-import SolidButton from '../buttons/SolidButton'
+import { OutlinedButton } from '/components'
 
 const Navbar = () => {
 	return (

@@ -55,7 +55,6 @@ const categoryArray = [
 ]
 
 const ExploreCategories = () => {
-    return null
 	return (
 		<div className={styles.container}>
 			<div className={styles.wrapper}>
