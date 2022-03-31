@@ -2,7 +2,7 @@ import React from 'react'
 import { Navbar, Footer, HowItBegan, MeetTheTeam, TeamRecommends, Tribe, UniqueHobbies, Welcome } from '/components'
 import styles from '/styles/pages/About.module.scss'
 
-const about = () => {
+const About = () => {
   return (
     <div>
       <Navbar/>
@@ -18,4 +18,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

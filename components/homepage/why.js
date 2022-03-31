@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from '/styles/components/homepage/Why.module.scss'
-import IdeaLamp from '/public/images/icons/idealamp.svg'
-import GreenBlocks from '/public/images/icons/greenblocks.svg'
-import BlueGradHat from '/public/images/icons/bluegradhat.svg'
+import IdeaLamp from '/public/images/icons/idea-lamp.svg'
+import GreenBlocks from '/public/images/icons/green-blocks.svg'
+import BlueGradHat from '/public/images/icons/blue-grad-hat.svg'
 import { SolidButton } from '/components'
 import ArrowRight from '/public/images/icons/white-arrow-right.svg'
 
