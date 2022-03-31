@@ -20,16 +20,16 @@ export {default as Footer} from '/components/common/footer/Footer'
 
 // ----------------------------------------------------------------------------- HomePage Components ---------------------------------------------------------------------------->
 
-export {default as Unleash} from '/components/homepage/Unleash'
+export {default as Unleash} from '/components/homepage/unleash'
 export {default as Why} from '/components/homepage/why'
-export {default as ExploreCategories} from '/components/homepage/ExploreCategories'
-export {default as GlobalInSpirit} from '/components/homepage/GlobalInSpirit'
-export {default as PopularCourses} from '/components/homepage/PopularCourses'
-export {default as Quiz} from '/components/homepage/Quiz'
-export {default as Tribe} from '/components/homepage/Tribe'
-export {default as UniqueHobbies} from '/components/homepage/UniqueHobbies'
-export {default as JoinTheTribe} from '/components/homepage/JoinTheTribe'
-export {default as Testimonial} from '/components/homepage/Testimonial'
+export {default as ExploreCategories} from '/components/homepage/explore-categories'
+export {default as GlobalInSpirit} from '/components/homepage/global-in-spirit'
+export {default as PopularCourses} from '/components/homepage/popular-courses'
+export {default as Quiz} from '/components/homepage/quiz'
+export {default as Tribe} from '/components/homepage/tribe'
+export {default as UniqueHobbies} from '/components/homepage/unique-hobbies'
+export {default as JoinTheTribe} from '/components/homepage/join-the-tribe'
+export {default as Testimonial} from '/components/homepage/testimonial'
 
 // ----------------------------------------------------------------------------- About Us Components ------------------------------------------------------------------------------->
 export {default as Welcome} from '/components/about/welcome'
