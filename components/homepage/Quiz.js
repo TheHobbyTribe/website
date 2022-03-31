@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { WhiteButton } from '/components'
 import ArrowRight from '/public/images/icons/black-arrow-right.svg'
 
+
 const Quiz = () => {
 	return (
 		<div className={styles.container}>
